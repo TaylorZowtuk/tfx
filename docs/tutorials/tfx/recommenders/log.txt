@@ -1,0 +1,3730 @@
+2023-05-03 20:26:37.503425: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-03 20:26:37.642892: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2023-05-03 20:26:37.642940: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-05-03 20:26:37.678984: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-05-03 20:26:38.587772: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2023-05-03 20:26:38.587892: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2023-05-03 20:26:38.587919: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+INFO:absl:Excluding no splits because exclude_splits is not set.
+INFO:absl:Excluding no splits because exclude_splits is not set.
+INFO:absl:Excluding no splits because exclude_splits is not set.
+INFO:absl:Excluding no splits because exclude_splits is not set.
+INFO:absl:Generating ephemeral wheel package for '/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/movies_transform_module.py' (including modules: ['ratings_transform_module', 'trainer_module', 'movies_transform_module', 'local_runner', 'pipeline']).
+INFO:absl:User module package has hash fingerprint version d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.
+INFO:absl:Executing: ['/home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/bin/python', '/tmp/tmp32lmt7sc/_tfx_generated_setup.py', 'bdist_wheel', '--bdist-dir', '/tmp/tmp4jmqf82r', '--dist-dir', '/tmp/tmpofqvgn_v']
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+copying ratings_transform_module.py -> build/lib
+copying trainer_module.py -> build/lib
+copying movies_transform_module.py -> build/lib
+copying local_runner.py -> build/lib
+copying pipeline.py -> build/lib
+warning: build_py: byte-compiling is disabled, skipping.
+
+/home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/lib/python3.9/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+installing to /tmp/tmp4jmqf82r
+running install
+running install_lib
+copying build/lib/ratings_transform_module.py -> /tmp/tmp4jmqf82r
+copying build/lib/trainer_module.py -> /tmp/tmp4jmqf82r
+copying build/lib/movies_transform_module.py -> /tmp/tmp4jmqf82r
+copying build/lib/local_runner.py -> /tmp/tmp4jmqf82r
+copying build/lib/pipeline.py -> /tmp/tmp4jmqf82r
+warning: install_lib: byte-compiling is disabled, skipping.
+
+running install_egg_info
+running egg_info
+creating tfx_user_code_movies_transform.egg-info
+writing tfx_user_code_movies_transform.egg-info/PKG-INFO
+writing dependency_links to tfx_user_code_movies_transform.egg-info/dependency_links.txt
+writing top-level names to tfx_user_code_movies_transform.egg-info/top_level.txt
+writing manifest file 'tfx_user_code_movies_transform.egg-info/SOURCES.txt'
+reading manifest file 'tfx_user_code_movies_transform.egg-info/SOURCES.txt'
+writing manifest file 'tfx_user_code_movies_transform.egg-info/SOURCES.txt'
+Copying tfx_user_code_movies_transform.egg-info to /tmp/tmp4jmqf82r/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3.9.egg-info
+running install_scripts
+creating /tmp/tmp4jmqf82r/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.dist-info/WHEEL
+creating '/tmp/tmpofqvgn_v/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl' and adding '/tmp/tmp4jmqf82r' to it
+adding 'local_runner.py'
+adding 'movies_transform_module.py'
+adding 'pipeline.py'
+adding 'ratings_transform_module.py'
+adding 'trainer_module.py'
+adding 'tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.dist-info/METADATA'
+adding 'tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.dist-info/WHEEL'
+adding 'tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.dist-info/top_level.txt'
+adding 'tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.dist-info/RECORD'
+removing /tmp/tmp4jmqf82r
+INFO:absl:Successfully built user code wheel distribution at '/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl'; target user module is 'movies_transform_module'.
+INFO:absl:Full user module path is 'movies_transform_module@/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl'
+INFO:absl:Generating ephemeral wheel package for '/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/ratings_transform_module.py' (including modules: ['ratings_transform_module', 'trainer_module', 'movies_transform_module', 'local_runner', 'pipeline']).
+INFO:absl:User module package has hash fingerprint version d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.
+INFO:absl:Executing: ['/home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/bin/python', '/tmp/tmphycbazk3/_tfx_generated_setup.py', 'bdist_wheel', '--bdist-dir', '/tmp/tmphmu8f0i2', '--dist-dir', '/tmp/tmpwxeverqf']
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+copying ratings_transform_module.py -> build/lib
+copying trainer_module.py -> build/lib
+copying movies_transform_module.py -> build/lib
+copying local_runner.py -> build/lib
+copying pipeline.py -> build/lib
+warning: build_py: byte-compiling is disabled, skipping.
+
+/home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/lib/python3.9/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+installing to /tmp/tmphmu8f0i2
+running install
+running install_lib
+copying build/lib/ratings_transform_module.py -> /tmp/tmphmu8f0i2
+copying build/lib/trainer_module.py -> /tmp/tmphmu8f0i2
+copying build/lib/movies_transform_module.py -> /tmp/tmphmu8f0i2
+copying build/lib/local_runner.py -> /tmp/tmphmu8f0i2
+copying build/lib/pipeline.py -> /tmp/tmphmu8f0i2
+warning: install_lib: byte-compiling is disabled, skipping.
+
+running install_egg_info
+running egg_info
+creating tfx_user_code_ratings_transform.egg-info
+writing tfx_user_code_ratings_transform.egg-info/PKG-INFO
+writing dependency_links to tfx_user_code_ratings_transform.egg-info/dependency_links.txt
+writing top-level names to tfx_user_code_ratings_transform.egg-info/top_level.txt
+writing manifest file 'tfx_user_code_ratings_transform.egg-info/SOURCES.txt'
+reading manifest file 'tfx_user_code_ratings_transform.egg-info/SOURCES.txt'
+writing manifest file 'tfx_user_code_ratings_transform.egg-info/SOURCES.txt'
+Copying tfx_user_code_ratings_transform.egg-info to /tmp/tmphmu8f0i2/tfx_user_code_ratings_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3.9.egg-info
+running install_scripts
+creating /tmp/tmphmu8f0i2/tfx_user_code_ratings_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.dist-info/WHEEL
+creating '/tmp/tmpwxeverqf/tfx_user_code_ratings_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl' and adding '/tmp/tmphmu8f0i2' to it
+adding 'local_runner.py'
+adding 'movies_transform_module.py'
+adding 'pipeline.py'
+adding 'ratings_transform_module.py'
+adding 'trainer_module.py'
+adding 'tfx_user_code_ratings_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.dist-info/METADATA'
+adding 'tfx_user_code_ratings_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.dist-info/WHEEL'
+adding 'tfx_user_code_ratings_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.dist-info/top_level.txt'
+adding 'tfx_user_code_ratings_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.dist-info/RECORD'
+removing /tmp/tmphmu8f0i2
+INFO:absl:Successfully built user code wheel distribution at '/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_ratings_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl'; target user module is 'ratings_transform_module'.
+INFO:absl:Full user module path is 'ratings_transform_module@/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_ratings_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl'
+INFO:absl:Generating ephemeral wheel package for '/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/trainer_module.py' (including modules: ['ratings_transform_module', 'trainer_module', 'movies_transform_module', 'local_runner', 'pipeline']).
+INFO:absl:User module package has hash fingerprint version d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.
+INFO:absl:Executing: ['/home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/bin/python', '/tmp/tmp5c93iv4y/_tfx_generated_setup.py', 'bdist_wheel', '--bdist-dir', '/tmp/tmphciwuuz5', '--dist-dir', '/tmp/tmp6xp4u5d0']
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+copying ratings_transform_module.py -> build/lib
+copying trainer_module.py -> build/lib
+copying movies_transform_module.py -> build/lib
+copying local_runner.py -> build/lib
+copying pipeline.py -> build/lib
+warning: build_py: byte-compiling is disabled, skipping.
+
+/home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/lib/python3.9/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+installing to /tmp/tmphciwuuz5
+running install
+running install_lib
+copying build/lib/ratings_transform_module.py -> /tmp/tmphciwuuz5
+copying build/lib/trainer_module.py -> /tmp/tmphciwuuz5
+copying build/lib/movies_transform_module.py -> /tmp/tmphciwuuz5
+copying build/lib/local_runner.py -> /tmp/tmphciwuuz5
+copying build/lib/pipeline.py -> /tmp/tmphciwuuz5
+warning: install_lib: byte-compiling is disabled, skipping.
+
+running install_egg_info
+running egg_info
+creating tfx_user_code_trainer.egg-info
+writing tfx_user_code_trainer.egg-info/PKG-INFO
+writing dependency_links to tfx_user_code_trainer.egg-info/dependency_links.txt
+writing top-level names to tfx_user_code_trainer.egg-info/top_level.txt
+writing manifest file 'tfx_user_code_trainer.egg-info/SOURCES.txt'
+reading manifest file 'tfx_user_code_trainer.egg-info/SOURCES.txt'
+writing manifest file 'tfx_user_code_trainer.egg-info/SOURCES.txt'
+Copying tfx_user_code_trainer.egg-info to /tmp/tmphciwuuz5/tfx_user_code_trainer-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3.9.egg-info
+running install_scripts
+creating /tmp/tmphciwuuz5/tfx_user_code_trainer-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.dist-info/WHEEL
+creating '/tmp/tmp6xp4u5d0/tfx_user_code_trainer-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl' and adding '/tmp/tmphciwuuz5' to it
+adding 'local_runner.py'
+adding 'movies_transform_module.py'
+adding 'pipeline.py'
+adding 'ratings_transform_module.py'
+adding 'trainer_module.py'
+adding 'tfx_user_code_trainer-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.dist-info/METADATA'
+adding 'tfx_user_code_trainer-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.dist-info/WHEEL'
+adding 'tfx_user_code_trainer-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.dist-info/top_level.txt'
+adding 'tfx_user_code_trainer-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56.dist-info/RECORD'
+removing /tmp/tmphciwuuz5
+INFO:absl:Successfully built user code wheel distribution at '/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_trainer-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl'; target user module is 'trainer_module'.
+INFO:absl:Full user module path is 'trainer_module@/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_trainer-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl'
+INFO:absl:Using deployment config:
+ executor_specs {
+  key: "movies_example_gen"
+  value {
+    beam_executable_spec {
+      python_executor_spec {
+        class_path: "pipeline.TFDSExecutor"
+      }
+    }
+  }
+}
+executor_specs {
+  key: "movies_schema_gen"
+  value {
+    python_class_executable_spec {
+      class_path: "tfx.components.schema_gen.executor.Executor"
+    }
+  }
+}
+executor_specs {
+  key: "movies_stats_gen"
+  value {
+    beam_executable_spec {
+      python_executor_spec {
+        class_path: "tfx.components.statistics_gen.executor.Executor"
+      }
+    }
+  }
+}
+executor_specs {
+  key: "movies_transform"
+  value {
+    beam_executable_spec {
+      python_executor_spec {
+        class_path: "tfx.components.transform.executor.Executor"
+      }
+    }
+  }
+}
+executor_specs {
+  key: "pusher"
+  value {
+    python_class_executable_spec {
+      class_path: "tfx.components.pusher.executor.Executor"
+    }
+  }
+}
+executor_specs {
+  key: "ratings_example_gen"
+  value {
+    beam_executable_spec {
+      python_executor_spec {
+        class_path: "pipeline.TFDSExecutor"
+      }
+    }
+  }
+}
+executor_specs {
+  key: "ratings_schema_gen"
+  value {
+    python_class_executable_spec {
+      class_path: "tfx.components.schema_gen.executor.Executor"
+    }
+  }
+}
+executor_specs {
+  key: "ratings_stats_gen"
+  value {
+    beam_executable_spec {
+      python_executor_spec {
+        class_path: "tfx.components.statistics_gen.executor.Executor"
+      }
+    }
+  }
+}
+executor_specs {
+  key: "ratings_transform"
+  value {
+    beam_executable_spec {
+      python_executor_spec {
+        class_path: "tfx.components.transform.executor.Executor"
+      }
+    }
+  }
+}
+executor_specs {
+  key: "trainer"
+  value {
+    python_class_executable_spec {
+      class_path: "tfx.components.trainer.executor.GenericExecutor"
+    }
+  }
+}
+custom_driver_specs {
+  key: "movies_example_gen"
+  value {
+    python_class_executable_spec {
+      class_path: "tfx.components.example_gen.driver.FileBasedDriver"
+    }
+  }
+}
+custom_driver_specs {
+  key: "ratings_example_gen"
+  value {
+    python_class_executable_spec {
+      class_path: "tfx.components.example_gen.driver.FileBasedDriver"
+    }
+  }
+}
+metadata_connection_config {
+  database_connection_config {
+    sqlite {
+      filename_uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_metadata/recommender/metadata.db"
+      connection_mode: READWRITE_OPENCREATE
+    }
+  }
+}
+
+INFO:absl:Using connection config:
+ sqlite {
+  filename_uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_metadata/recommender/metadata.db"
+  connection_mode: READWRITE_OPENCREATE
+}
+
+INFO:absl:Component movies_example_gen is running.
+INFO:absl:Running launcher for node_info {
+  type {
+    name: "tfx.components.example_gen.component.FileBasedExampleGen"
+  }
+  id: "movies_example_gen"
+}
+contexts {
+  contexts {
+    type {
+      name: "pipeline"
+    }
+    name {
+      field_value {
+        string_value: "recommender"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "pipeline_run"
+    }
+    name {
+      field_value {
+        string_value: "2023-05-03T20:26:44.747092"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "node"
+    }
+    name {
+      field_value {
+        string_value: "recommender.movies_example_gen"
+      }
+    }
+  }
+}
+outputs {
+  outputs {
+    key: "examples"
+    value {
+      artifact_spec {
+        type {
+          name: "Examples"
+          properties {
+            key: "span"
+            value: INT
+          }
+          properties {
+            key: "split_names"
+            value: STRING
+          }
+          properties {
+            key: "version"
+            value: INT
+          }
+          base_type: DATASET
+        }
+      }
+    }
+  }
+}
+parameters {
+  parameters {
+    key: "custom_config"
+    value {
+      field_value {
+        string_value: "{\"dataset\": \"movielens/100k-movies\", \"split\": \"train\"}"
+      }
+    }
+  }
+  parameters {
+    key: "input_base"
+    value {
+      field_value {
+        string_value: "dummy"
+      }
+    }
+  }
+  parameters {
+    key: "input_config"
+    value {
+      field_value {
+        string_value: "{\n  \"splits\": [\n    {\n      \"name\": \"single_split\",\n      \"pattern\": \"*\"\n    }\n  ]\n}"
+      }
+    }
+  }
+  parameters {
+    key: "output_config"
+    value {
+      field_value {
+        string_value: "{\n  \"split_config\": {\n    \"splits\": [\n      {\n        \"hash_buckets\": 2,\n        \"name\": \"train\"\n      },\n      {\n        \"hash_buckets\": 1,\n        \"name\": \"eval\"\n      }\n    ]\n  }\n}"
+      }
+    }
+  }
+  parameters {
+    key: "output_data_format"
+    value {
+      field_value {
+        int_value: 6
+      }
+    }
+  }
+  parameters {
+    key: "output_file_format"
+    value {
+      field_value {
+        int_value: 5
+      }
+    }
+  }
+}
+downstream_nodes: "movies_stats_gen"
+downstream_nodes: "movies_transform"
+execution_options {
+  caching_options {
+  }
+}
+
+INFO:absl:MetadataStore with DB connection initialized
+INFO:absl:[movies_example_gen] Resolved inputs: ({},)
+INFO:absl:select span and version = (0, None)
+INFO:absl:latest span and version = (0, None)
+INFO:absl:MetadataStore with DB connection initialized
+INFO:absl:Going to run a new execution 1
+INFO:absl:Going to run a new execution: ExecutionInfo(execution_id=1, input_dict={}, output_dict=defaultdict(<class 'list'>, {'examples': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_example_gen/examples/1"
+custom_properties {
+  key: "input_fingerprint"
+  value {
+    string_value: "split:single_split,num_files:0,total_bytes:0,xor_checksum:0,sum_checksum:0"
+  }
+}
+custom_properties {
+  key: "span"
+  value {
+    int_value: 0
+  }
+}
+, artifact_type: name: "Examples"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+properties {
+  key: "version"
+  value: INT
+}
+base_type: DATASET
+)]}), exec_properties={'input_base': 'dummy', 'output_config': '{\n  "split_config": {\n    "splits": [\n      {\n        "hash_buckets": 2,\n        "name": "train"\n      },\n      {\n        "hash_buckets": 1,\n        "name": "eval"\n      }\n    ]\n  }\n}', 'custom_config': '{"dataset": "movielens/100k-movies", "split": "train"}', 'input_config': '{\n  "splits": [\n    {\n      "name": "single_split",\n      "pattern": "*"\n    }\n  ]\n}', 'output_file_format': 5, 'output_data_format': 6, 'span': 0, 'version': None, 'input_fingerprint': 'split:single_split,num_files:0,total_bytes:0,xor_checksum:0,sum_checksum:0'}, execution_output_uri='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_example_gen/.system/executor_execution/1/executor_output.pb', stateful_working_dir='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_example_gen/.system/stateful_working_dir/2023-05-03T20:26:44.747092', tmp_dir='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_example_gen/.system/executor_execution/1/.temp/', pipeline_node=node_info {
+  type {
+    name: "tfx.components.example_gen.component.FileBasedExampleGen"
+  }
+  id: "movies_example_gen"
+}
+contexts {
+  contexts {
+    type {
+      name: "pipeline"
+    }
+    name {
+      field_value {
+        string_value: "recommender"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "pipeline_run"
+    }
+    name {
+      field_value {
+        string_value: "2023-05-03T20:26:44.747092"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "node"
+    }
+    name {
+      field_value {
+        string_value: "recommender.movies_example_gen"
+      }
+    }
+  }
+}
+outputs {
+  outputs {
+    key: "examples"
+    value {
+      artifact_spec {
+        type {
+          name: "Examples"
+          properties {
+            key: "span"
+            value: INT
+          }
+          properties {
+            key: "split_names"
+            value: STRING
+          }
+          properties {
+            key: "version"
+            value: INT
+          }
+          base_type: DATASET
+        }
+      }
+    }
+  }
+}
+parameters {
+  parameters {
+    key: "custom_config"
+    value {
+      field_value {
+        string_value: "{\"dataset\": \"movielens/100k-movies\", \"split\": \"train\"}"
+      }
+    }
+  }
+  parameters {
+    key: "input_base"
+    value {
+      field_value {
+        string_value: "dummy"
+      }
+    }
+  }
+  parameters {
+    key: "input_config"
+    value {
+      field_value {
+        string_value: "{\n  \"splits\": [\n    {\n      \"name\": \"single_split\",\n      \"pattern\": \"*\"\n    }\n  ]\n}"
+      }
+    }
+  }
+  parameters {
+    key: "output_config"
+    value {
+      field_value {
+        string_value: "{\n  \"split_config\": {\n    \"splits\": [\n      {\n        \"hash_buckets\": 2,\n        \"name\": \"train\"\n      },\n      {\n        \"hash_buckets\": 1,\n        \"name\": \"eval\"\n      }\n    ]\n  }\n}"
+      }
+    }
+  }
+  parameters {
+    key: "output_data_format"
+    value {
+      field_value {
+        int_value: 6
+      }
+    }
+  }
+  parameters {
+    key: "output_file_format"
+    value {
+      field_value {
+        int_value: 5
+      }
+    }
+  }
+}
+downstream_nodes: "movies_stats_gen"
+downstream_nodes: "movies_transform"
+execution_options {
+  caching_options {
+  }
+}
+, pipeline_info=id: "recommender"
+, pipeline_run_id='2023-05-03T20:26:44.747092')
+INFO:absl:Generating examples.
+INFO:root:Missing pipeline option (runner). Executing pipeline using the default runner: DirectRunner.
+INFO:absl:Load dataset info from /home/ubuntu/tensorflow_datasets/movielens/100k-movies/0.1.1
+INFO:absl:Reusing dataset movielens (/home/ubuntu/tensorflow_datasets/movielens/100k-movies/0.1.1)
+INFO:absl:Load dataset info from /home/ubuntu/tensorflow_datasets/movielens/100k-movies/0.1.1
+INFO:apache_beam.typehints.native_type_compatibility:Converting string literal type hint to Any: "Tree[TensorflowElem]"
+INFO:apache_beam.typehints.native_type_compatibility:Converting string literal type hint to Any: "Tree[NumpyElem]"
+INFO:root:Default Python SDK image for environment is apache/beam_python3.9_sdk:2.44.0
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function annotate_downstream_side_inputs at 0x7f68186c4ee0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function fix_side_input_pcoll_coders at 0x7f68186c5040> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function pack_combiners at 0x7f68186c5550> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function lift_combiners at 0x7f68186c55e0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function expand_sdf at 0x7f68186c5790> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function expand_gbk at 0x7f68186c5820> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function sink_flattens at 0x7f68186c5940> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function greedily_fuse at 0x7f68186c59d0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function read_to_impulse at 0x7f68186c5a60> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function impulse_to_input at 0x7f68186c5af0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function sort_stages at 0x7f68186c5d30> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function add_impulse_to_dangling_transforms at 0x7f68186c5e50> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function setup_timer_mapping at 0x7f68186c5ca0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function populate_data_channel_coders at 0x7f68186c5dc0> ====================
+INFO:apache_beam.runners.worker.statecache:Creating state cache with size 104857600
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:Created Worker handler <apache_beam.runners.portability.fn_api_runner.worker_handlers.EmbeddedWorkerHandler object at 0x7f683a535fa0> for environment ref_Environment_default_environment_1 (beam:env:embedded_python:v1, b'')
+INFO:absl:Load dataset info from /home/ubuntu/tensorflow_datasets/movielens/100k-movies/0.1.1
+INFO:absl:Load dataset info from /home/ubuntu/tensorflow_datasets/movielens/100k-movies/0.1.1
+INFO:absl:Load dataset info from /home/ubuntu/tensorflow_datasets/movielens/100k-movies/0.1.1
+INFO:absl:Load dataset info from /home/ubuntu/tensorflow_datasets/movielens/100k-movies/0.1.1
+WARNING:absl:`TensorInfo.dtype` is deprecated. Please change your code to use NumPy with the field `TensorInfo.np_dtype` or use TensorFlow with the field `TensorInfo.tf_dtype`.
+WARNING:absl:You use TensorFlow DType <dtype: 'int64'> in tfds.features This will soon be deprecated in favor of NumPy DTypes. In the meantime it was converted to int64.
+2023-05-03 20:26:45.474866: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2023-05-03 20:26:45.474907: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2023-05-03 20:26:45.474944: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (ip-172-31-40-43): /proc/driver/nvidia/version does not exist
+2023-05-03 20:26:45.475299: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:absl:Constructing tf.data.Dataset movielens for split train[0shard], from /home/ubuntu/tensorflow_datasets/movielens/100k-movies/0.1.1
+WARNING:apache_beam.io.tfrecordio:Couldn't find python-snappy so the implementation of _TFRecordUtil._masked_crc32c is not as fast as it could be.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:absl:Examples generated.
+INFO:absl:Value type <class 'NoneType'> of key version in exec_properties is not supported, going to drop it
+INFO:absl:Value type <class 'list'> of key _beam_pipeline_args in exec_properties is not supported, going to drop it
+INFO:absl:Cleaning up stateless execution info.
+INFO:absl:Execution 1 succeeded.
+INFO:absl:Cleaning up stateful execution info.
+INFO:absl:Publishing output artifacts defaultdict(<class 'list'>, {'examples': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_example_gen/examples/1"
+custom_properties {
+  key: "input_fingerprint"
+  value {
+    string_value: "split:single_split,num_files:0,total_bytes:0,xor_checksum:0,sum_checksum:0"
+  }
+}
+custom_properties {
+  key: "span"
+  value {
+    int_value: 0
+  }
+}
+, artifact_type: name: "Examples"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+properties {
+  key: "version"
+  value: INT
+}
+base_type: DATASET
+)]}) for execution 1
+INFO:absl:MetadataStore with DB connection initialized
+INFO:absl:Component movies_example_gen is finished.
+INFO:absl:Component ratings_example_gen is running.
+INFO:absl:Running launcher for node_info {
+  type {
+    name: "tfx.components.example_gen.component.FileBasedExampleGen"
+  }
+  id: "ratings_example_gen"
+}
+contexts {
+  contexts {
+    type {
+      name: "pipeline"
+    }
+    name {
+      field_value {
+        string_value: "recommender"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "pipeline_run"
+    }
+    name {
+      field_value {
+        string_value: "2023-05-03T20:26:44.747092"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "node"
+    }
+    name {
+      field_value {
+        string_value: "recommender.ratings_example_gen"
+      }
+    }
+  }
+}
+outputs {
+  outputs {
+    key: "examples"
+    value {
+      artifact_spec {
+        type {
+          name: "Examples"
+          properties {
+            key: "span"
+            value: INT
+          }
+          properties {
+            key: "split_names"
+            value: STRING
+          }
+          properties {
+            key: "version"
+            value: INT
+          }
+          base_type: DATASET
+        }
+      }
+    }
+  }
+}
+parameters {
+  parameters {
+    key: "custom_config"
+    value {
+      field_value {
+        string_value: "{\"dataset\": \"movielens/100k-ratings\", \"split\": \"train\"}"
+      }
+    }
+  }
+  parameters {
+    key: "input_base"
+    value {
+      field_value {
+        string_value: "dummy"
+      }
+    }
+  }
+  parameters {
+    key: "input_config"
+    value {
+      field_value {
+        string_value: "{\n  \"splits\": [\n    {\n      \"name\": \"single_split\",\n      \"pattern\": \"*\"\n    }\n  ]\n}"
+      }
+    }
+  }
+  parameters {
+    key: "output_config"
+    value {
+      field_value {
+        string_value: "{\n  \"split_config\": {\n    \"splits\": [\n      {\n        \"hash_buckets\": 2,\n        \"name\": \"train\"\n      },\n      {\n        \"hash_buckets\": 1,\n        \"name\": \"eval\"\n      }\n    ]\n  }\n}"
+      }
+    }
+  }
+  parameters {
+    key: "output_data_format"
+    value {
+      field_value {
+        int_value: 6
+      }
+    }
+  }
+  parameters {
+    key: "output_file_format"
+    value {
+      field_value {
+        int_value: 5
+      }
+    }
+  }
+}
+downstream_nodes: "ratings_stats_gen"
+downstream_nodes: "ratings_transform"
+execution_options {
+  caching_options {
+  }
+}
+
+INFO:absl:MetadataStore with DB connection initialized
+INFO:absl:[ratings_example_gen] Resolved inputs: ({},)
+INFO:absl:select span and version = (0, None)
+INFO:absl:latest span and version = (0, None)
+INFO:absl:MetadataStore with DB connection initialized
+INFO:absl:Going to run a new execution 2
+INFO:absl:Going to run a new execution: ExecutionInfo(execution_id=2, input_dict={}, output_dict=defaultdict(<class 'list'>, {'examples': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_example_gen/examples/2"
+custom_properties {
+  key: "input_fingerprint"
+  value {
+    string_value: "split:single_split,num_files:0,total_bytes:0,xor_checksum:0,sum_checksum:0"
+  }
+}
+custom_properties {
+  key: "span"
+  value {
+    int_value: 0
+  }
+}
+, artifact_type: name: "Examples"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+properties {
+  key: "version"
+  value: INT
+}
+base_type: DATASET
+)]}), exec_properties={'input_config': '{\n  "splits": [\n    {\n      "name": "single_split",\n      "pattern": "*"\n    }\n  ]\n}', 'output_data_format': 6, 'output_config': '{\n  "split_config": {\n    "splits": [\n      {\n        "hash_buckets": 2,\n        "name": "train"\n      },\n      {\n        "hash_buckets": 1,\n        "name": "eval"\n      }\n    ]\n  }\n}', 'output_file_format': 5, 'custom_config': '{"dataset": "movielens/100k-ratings", "split": "train"}', 'input_base': 'dummy', 'span': 0, 'version': None, 'input_fingerprint': 'split:single_split,num_files:0,total_bytes:0,xor_checksum:0,sum_checksum:0'}, execution_output_uri='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_example_gen/.system/executor_execution/2/executor_output.pb', stateful_working_dir='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_example_gen/.system/stateful_working_dir/2023-05-03T20:26:44.747092', tmp_dir='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_example_gen/.system/executor_execution/2/.temp/', pipeline_node=node_info {
+  type {
+    name: "tfx.components.example_gen.component.FileBasedExampleGen"
+  }
+  id: "ratings_example_gen"
+}
+contexts {
+  contexts {
+    type {
+      name: "pipeline"
+    }
+    name {
+      field_value {
+        string_value: "recommender"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "pipeline_run"
+    }
+    name {
+      field_value {
+        string_value: "2023-05-03T20:26:44.747092"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "node"
+    }
+    name {
+      field_value {
+        string_value: "recommender.ratings_example_gen"
+      }
+    }
+  }
+}
+outputs {
+  outputs {
+    key: "examples"
+    value {
+      artifact_spec {
+        type {
+          name: "Examples"
+          properties {
+            key: "span"
+            value: INT
+          }
+          properties {
+            key: "split_names"
+            value: STRING
+          }
+          properties {
+            key: "version"
+            value: INT
+          }
+          base_type: DATASET
+        }
+      }
+    }
+  }
+}
+parameters {
+  parameters {
+    key: "custom_config"
+    value {
+      field_value {
+        string_value: "{\"dataset\": \"movielens/100k-ratings\", \"split\": \"train\"}"
+      }
+    }
+  }
+  parameters {
+    key: "input_base"
+    value {
+      field_value {
+        string_value: "dummy"
+      }
+    }
+  }
+  parameters {
+    key: "input_config"
+    value {
+      field_value {
+        string_value: "{\n  \"splits\": [\n    {\n      \"name\": \"single_split\",\n      \"pattern\": \"*\"\n    }\n  ]\n}"
+      }
+    }
+  }
+  parameters {
+    key: "output_config"
+    value {
+      field_value {
+        string_value: "{\n  \"split_config\": {\n    \"splits\": [\n      {\n        \"hash_buckets\": 2,\n        \"name\": \"train\"\n      },\n      {\n        \"hash_buckets\": 1,\n        \"name\": \"eval\"\n      }\n    ]\n  }\n}"
+      }
+    }
+  }
+  parameters {
+    key: "output_data_format"
+    value {
+      field_value {
+        int_value: 6
+      }
+    }
+  }
+  parameters {
+    key: "output_file_format"
+    value {
+      field_value {
+        int_value: 5
+      }
+    }
+  }
+}
+downstream_nodes: "ratings_stats_gen"
+downstream_nodes: "ratings_transform"
+execution_options {
+  caching_options {
+  }
+}
+, pipeline_info=id: "recommender"
+, pipeline_run_id='2023-05-03T20:26:44.747092')
+INFO:absl:Generating examples.
+INFO:root:Missing pipeline option (runner). Executing pipeline using the default runner: DirectRunner.
+INFO:absl:Load dataset info from /home/ubuntu/tensorflow_datasets/movielens/100k-ratings/0.1.1
+INFO:absl:Reusing dataset movielens (/home/ubuntu/tensorflow_datasets/movielens/100k-ratings/0.1.1)
+INFO:absl:Load dataset info from /home/ubuntu/tensorflow_datasets/movielens/100k-ratings/0.1.1
+INFO:apache_beam.typehints.native_type_compatibility:Converting string literal type hint to Any: "Tree[TensorflowElem]"
+INFO:apache_beam.typehints.native_type_compatibility:Converting string literal type hint to Any: "Tree[NumpyElem]"
+INFO:root:Default Python SDK image for environment is apache/beam_python3.9_sdk:2.44.0
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function annotate_downstream_side_inputs at 0x7f68186c4ee0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function fix_side_input_pcoll_coders at 0x7f68186c5040> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function pack_combiners at 0x7f68186c5550> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function lift_combiners at 0x7f68186c55e0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function expand_sdf at 0x7f68186c5790> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function expand_gbk at 0x7f68186c5820> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function sink_flattens at 0x7f68186c5940> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function greedily_fuse at 0x7f68186c59d0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function read_to_impulse at 0x7f68186c5a60> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function impulse_to_input at 0x7f68186c5af0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function sort_stages at 0x7f68186c5d30> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function add_impulse_to_dangling_transforms at 0x7f68186c5e50> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function setup_timer_mapping at 0x7f68186c5ca0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function populate_data_channel_coders at 0x7f68186c5dc0> ====================
+INFO:apache_beam.runners.worker.statecache:Creating state cache with size 104857600
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:Created Worker handler <apache_beam.runners.portability.fn_api_runner.worker_handlers.EmbeddedWorkerHandler object at 0x7f683a35f3d0> for environment ref_Environment_default_environment_1 (beam:env:embedded_python:v1, b'')
+INFO:absl:Load dataset info from /home/ubuntu/tensorflow_datasets/movielens/100k-ratings/0.1.1
+INFO:absl:Load dataset info from /home/ubuntu/tensorflow_datasets/movielens/100k-ratings/0.1.1
+INFO:absl:Load dataset info from /home/ubuntu/tensorflow_datasets/movielens/100k-ratings/0.1.1
+INFO:absl:Load dataset info from /home/ubuntu/tensorflow_datasets/movielens/100k-ratings/0.1.1
+WARNING:absl:`TensorInfo.dtype` is deprecated. Please change your code to use NumPy with the field `TensorInfo.np_dtype` or use TensorFlow with the field `TensorInfo.tf_dtype`.
+INFO:absl:Constructing tf.data.Dataset movielens for split train[0shard], from /home/ubuntu/tensorflow_datasets/movielens/100k-ratings/0.1.1
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:absl:Examples generated.
+INFO:absl:Value type <class 'NoneType'> of key version in exec_properties is not supported, going to drop it
+INFO:absl:Value type <class 'list'> of key _beam_pipeline_args in exec_properties is not supported, going to drop it
+INFO:absl:Cleaning up stateless execution info.
+INFO:absl:Execution 2 succeeded.
+INFO:absl:Cleaning up stateful execution info.
+INFO:absl:Publishing output artifacts defaultdict(<class 'list'>, {'examples': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_example_gen/examples/2"
+custom_properties {
+  key: "input_fingerprint"
+  value {
+    string_value: "split:single_split,num_files:0,total_bytes:0,xor_checksum:0,sum_checksum:0"
+  }
+}
+custom_properties {
+  key: "span"
+  value {
+    int_value: 0
+  }
+}
+, artifact_type: name: "Examples"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+properties {
+  key: "version"
+  value: INT
+}
+base_type: DATASET
+)]}) for execution 2
+INFO:absl:MetadataStore with DB connection initialized
+INFO:absl:Component ratings_example_gen is finished.
+INFO:absl:Component movies_stats_gen is running.
+INFO:absl:Running launcher for node_info {
+  type {
+    name: "tfx.components.statistics_gen.component.StatisticsGen"
+    base_type: PROCESS
+  }
+  id: "movies_stats_gen"
+}
+contexts {
+  contexts {
+    type {
+      name: "pipeline"
+    }
+    name {
+      field_value {
+        string_value: "recommender"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "pipeline_run"
+    }
+    name {
+      field_value {
+        string_value: "2023-05-03T20:26:44.747092"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "node"
+    }
+    name {
+      field_value {
+        string_value: "recommender.movies_stats_gen"
+      }
+    }
+  }
+}
+inputs {
+  inputs {
+    key: "examples"
+    value {
+      channels {
+        producer_node_query {
+          id: "movies_example_gen"
+        }
+        context_queries {
+          type {
+            name: "pipeline"
+          }
+          name {
+            field_value {
+              string_value: "recommender"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "pipeline_run"
+          }
+          name {
+            field_value {
+              string_value: "2023-05-03T20:26:44.747092"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "node"
+          }
+          name {
+            field_value {
+              string_value: "recommender.movies_example_gen"
+            }
+          }
+        }
+        artifact_query {
+          type {
+            name: "Examples"
+            base_type: DATASET
+          }
+        }
+        output_key: "examples"
+      }
+      min_count: 1
+    }
+  }
+}
+outputs {
+  outputs {
+    key: "statistics"
+    value {
+      artifact_spec {
+        type {
+          name: "ExampleStatistics"
+          properties {
+            key: "span"
+            value: INT
+          }
+          properties {
+            key: "split_names"
+            value: STRING
+          }
+          base_type: STATISTICS
+        }
+      }
+    }
+  }
+}
+parameters {
+  parameters {
+    key: "exclude_splits"
+    value {
+      field_value {
+        string_value: "[]"
+      }
+    }
+  }
+}
+upstream_nodes: "movies_example_gen"
+downstream_nodes: "movies_schema_gen"
+execution_options {
+  caching_options {
+  }
+}
+
+INFO:absl:MetadataStore with DB connection initialized
+WARNING:absl:ArtifactQuery.property_predicate is not supported.
+INFO:absl:[movies_stats_gen] Resolved inputs: ({'examples': [Artifact(artifact: id: 1
+type_id: 15
+uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_example_gen/examples/1"
+properties {
+  key: "split_names"
+  value {
+    string_value: "[\"train\", \"eval\"]"
+  }
+}
+custom_properties {
+  key: "file_format"
+  value {
+    string_value: "tfrecords_gzip"
+  }
+}
+custom_properties {
+  key: "input_fingerprint"
+  value {
+    string_value: "split:single_split,num_files:0,total_bytes:0,xor_checksum:0,sum_checksum:0"
+  }
+}
+custom_properties {
+  key: "is_external"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "payload_format"
+  value {
+    string_value: "FORMAT_TF_EXAMPLE"
+  }
+}
+custom_properties {
+  key: "span"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "state"
+  value {
+    string_value: "published"
+  }
+}
+custom_properties {
+  key: "tfx_version"
+  value {
+    string_value: "1.11.0"
+  }
+}
+state: LIVE
+create_time_since_epoch: 1683145607150
+last_update_time_since_epoch: 1683145607150
+, artifact_type: id: 15
+name: "Examples"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+properties {
+  key: "version"
+  value: INT
+}
+base_type: DATASET
+)]},)
+INFO:absl:MetadataStore with DB connection initialized
+INFO:absl:Going to run a new execution 3
+INFO:absl:Going to run a new execution: ExecutionInfo(execution_id=3, input_dict={'examples': [Artifact(artifact: id: 1
+type_id: 15
+uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_example_gen/examples/1"
+properties {
+  key: "split_names"
+  value {
+    string_value: "[\"train\", \"eval\"]"
+  }
+}
+custom_properties {
+  key: "file_format"
+  value {
+    string_value: "tfrecords_gzip"
+  }
+}
+custom_properties {
+  key: "input_fingerprint"
+  value {
+    string_value: "split:single_split,num_files:0,total_bytes:0,xor_checksum:0,sum_checksum:0"
+  }
+}
+custom_properties {
+  key: "is_external"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "payload_format"
+  value {
+    string_value: "FORMAT_TF_EXAMPLE"
+  }
+}
+custom_properties {
+  key: "span"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "state"
+  value {
+    string_value: "published"
+  }
+}
+custom_properties {
+  key: "tfx_version"
+  value {
+    string_value: "1.11.0"
+  }
+}
+state: LIVE
+create_time_since_epoch: 1683145607150
+last_update_time_since_epoch: 1683145607150
+, artifact_type: id: 15
+name: "Examples"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+properties {
+  key: "version"
+  value: INT
+}
+base_type: DATASET
+)]}, output_dict=defaultdict(<class 'list'>, {'statistics': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_stats_gen/statistics/3"
+, artifact_type: name: "ExampleStatistics"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+base_type: STATISTICS
+)]}), exec_properties={'exclude_splits': '[]'}, execution_output_uri='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_stats_gen/.system/executor_execution/3/executor_output.pb', stateful_working_dir='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_stats_gen/.system/stateful_working_dir/2023-05-03T20:26:44.747092', tmp_dir='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_stats_gen/.system/executor_execution/3/.temp/', pipeline_node=node_info {
+  type {
+    name: "tfx.components.statistics_gen.component.StatisticsGen"
+    base_type: PROCESS
+  }
+  id: "movies_stats_gen"
+}
+contexts {
+  contexts {
+    type {
+      name: "pipeline"
+    }
+    name {
+      field_value {
+        string_value: "recommender"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "pipeline_run"
+    }
+    name {
+      field_value {
+        string_value: "2023-05-03T20:26:44.747092"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "node"
+    }
+    name {
+      field_value {
+        string_value: "recommender.movies_stats_gen"
+      }
+    }
+  }
+}
+inputs {
+  inputs {
+    key: "examples"
+    value {
+      channels {
+        producer_node_query {
+          id: "movies_example_gen"
+        }
+        context_queries {
+          type {
+            name: "pipeline"
+          }
+          name {
+            field_value {
+              string_value: "recommender"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "pipeline_run"
+          }
+          name {
+            field_value {
+              string_value: "2023-05-03T20:26:44.747092"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "node"
+          }
+          name {
+            field_value {
+              string_value: "recommender.movies_example_gen"
+            }
+          }
+        }
+        artifact_query {
+          type {
+            name: "Examples"
+            base_type: DATASET
+          }
+        }
+        output_key: "examples"
+      }
+      min_count: 1
+    }
+  }
+}
+outputs {
+  outputs {
+    key: "statistics"
+    value {
+      artifact_spec {
+        type {
+          name: "ExampleStatistics"
+          properties {
+            key: "span"
+            value: INT
+          }
+          properties {
+            key: "split_names"
+            value: STRING
+          }
+          base_type: STATISTICS
+        }
+      }
+    }
+  }
+}
+parameters {
+  parameters {
+    key: "exclude_splits"
+    value {
+      field_value {
+        string_value: "[]"
+      }
+    }
+  }
+}
+upstream_nodes: "movies_example_gen"
+downstream_nodes: "movies_schema_gen"
+execution_options {
+  caching_options {
+  }
+}
+, pipeline_info=id: "recommender"
+, pipeline_run_id='2023-05-03T20:26:44.747092')
+INFO:root:Missing pipeline option (runner). Executing pipeline using the default runner: DirectRunner.
+INFO:absl:Generating statistics for split train.
+INFO:apache_beam.typehints.native_type_compatibility:Using Any for unsupported type: typing.Mapping[tensorflow_data_validation.utils.path.FeaturePath, ForwardRef('schema_pb2.FeatureType')]
+INFO:apache_beam.typehints.native_type_compatibility:Using Any for unsupported type: typing.Mapping[tensorflow_data_validation.utils.path.FeaturePath, ForwardRef('schema_pb2.FeatureType')]
+INFO:apache_beam.typehints.native_type_compatibility:Using Any for unsupported type: typing.Mapping[tensorflow_data_validation.utils.path.FeaturePath, ForwardRef('schema_pb2.FeatureType')]
+INFO:absl:Statistics for split train written to /home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_stats_gen/statistics/3/Split-train.
+INFO:absl:Generating statistics for split eval.
+INFO:apache_beam.typehints.native_type_compatibility:Using Any for unsupported type: typing.Mapping[tensorflow_data_validation.utils.path.FeaturePath, ForwardRef('schema_pb2.FeatureType')]
+INFO:apache_beam.typehints.native_type_compatibility:Using Any for unsupported type: typing.Mapping[tensorflow_data_validation.utils.path.FeaturePath, ForwardRef('schema_pb2.FeatureType')]
+INFO:apache_beam.typehints.native_type_compatibility:Using Any for unsupported type: typing.Mapping[tensorflow_data_validation.utils.path.FeaturePath, ForwardRef('schema_pb2.FeatureType')]
+INFO:absl:Statistics for split eval written to /home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_stats_gen/statistics/3/Split-eval.
+INFO:root:Default Python SDK image for environment is apache/beam_python3.9_sdk:2.44.0
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function annotate_downstream_side_inputs at 0x7f68186c4ee0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function fix_side_input_pcoll_coders at 0x7f68186c5040> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function pack_combiners at 0x7f68186c5550> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function lift_combiners at 0x7f68186c55e0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function expand_sdf at 0x7f68186c5790> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function expand_gbk at 0x7f68186c5820> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function sink_flattens at 0x7f68186c5940> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function greedily_fuse at 0x7f68186c59d0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function read_to_impulse at 0x7f68186c5a60> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function impulse_to_input at 0x7f68186c5af0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function sort_stages at 0x7f68186c5d30> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function add_impulse_to_dangling_transforms at 0x7f68186c5e50> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function setup_timer_mapping at 0x7f68186c5ca0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function populate_data_channel_coders at 0x7f68186c5dc0> ====================
+INFO:apache_beam.runners.worker.statecache:Creating state cache with size 104857600
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:Created Worker handler <apache_beam.runners.portability.fn_api_runner.worker_handlers.EmbeddedWorkerHandler object at 0x7f67b6d64d00> for environment ref_Environment_default_environment_1 (beam:env:embedded_python:v1, b'')
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:absl:Cleaning up stateless execution info.
+INFO:absl:Execution 3 succeeded.
+INFO:absl:Cleaning up stateful execution info.
+INFO:absl:Publishing output artifacts defaultdict(<class 'list'>, {'statistics': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_stats_gen/statistics/3"
+, artifact_type: name: "ExampleStatistics"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+base_type: STATISTICS
+)]}) for execution 3
+INFO:absl:MetadataStore with DB connection initialized
+INFO:absl:Component movies_stats_gen is finished.
+INFO:absl:Component ratings_stats_gen is running.
+INFO:absl:Running launcher for node_info {
+  type {
+    name: "tfx.components.statistics_gen.component.StatisticsGen"
+    base_type: PROCESS
+  }
+  id: "ratings_stats_gen"
+}
+contexts {
+  contexts {
+    type {
+      name: "pipeline"
+    }
+    name {
+      field_value {
+        string_value: "recommender"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "pipeline_run"
+    }
+    name {
+      field_value {
+        string_value: "2023-05-03T20:26:44.747092"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "node"
+    }
+    name {
+      field_value {
+        string_value: "recommender.ratings_stats_gen"
+      }
+    }
+  }
+}
+inputs {
+  inputs {
+    key: "examples"
+    value {
+      channels {
+        producer_node_query {
+          id: "ratings_example_gen"
+        }
+        context_queries {
+          type {
+            name: "pipeline"
+          }
+          name {
+            field_value {
+              string_value: "recommender"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "pipeline_run"
+          }
+          name {
+            field_value {
+              string_value: "2023-05-03T20:26:44.747092"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "node"
+          }
+          name {
+            field_value {
+              string_value: "recommender.ratings_example_gen"
+            }
+          }
+        }
+        artifact_query {
+          type {
+            name: "Examples"
+            base_type: DATASET
+          }
+        }
+        output_key: "examples"
+      }
+      min_count: 1
+    }
+  }
+}
+outputs {
+  outputs {
+    key: "statistics"
+    value {
+      artifact_spec {
+        type {
+          name: "ExampleStatistics"
+          properties {
+            key: "span"
+            value: INT
+          }
+          properties {
+            key: "split_names"
+            value: STRING
+          }
+          base_type: STATISTICS
+        }
+      }
+    }
+  }
+}
+parameters {
+  parameters {
+    key: "exclude_splits"
+    value {
+      field_value {
+        string_value: "[]"
+      }
+    }
+  }
+}
+upstream_nodes: "ratings_example_gen"
+downstream_nodes: "ratings_schema_gen"
+execution_options {
+  caching_options {
+  }
+}
+
+INFO:absl:MetadataStore with DB connection initialized
+WARNING:absl:ArtifactQuery.property_predicate is not supported.
+INFO:absl:[ratings_stats_gen] Resolved inputs: ({'examples': [Artifact(artifact: id: 2
+type_id: 15
+uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_example_gen/examples/2"
+properties {
+  key: "split_names"
+  value {
+    string_value: "[\"train\", \"eval\"]"
+  }
+}
+custom_properties {
+  key: "file_format"
+  value {
+    string_value: "tfrecords_gzip"
+  }
+}
+custom_properties {
+  key: "input_fingerprint"
+  value {
+    string_value: "split:single_split,num_files:0,total_bytes:0,xor_checksum:0,sum_checksum:0"
+  }
+}
+custom_properties {
+  key: "is_external"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "payload_format"
+  value {
+    string_value: "FORMAT_TF_EXAMPLE"
+  }
+}
+custom_properties {
+  key: "span"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "state"
+  value {
+    string_value: "published"
+  }
+}
+custom_properties {
+  key: "tfx_version"
+  value {
+    string_value: "1.11.0"
+  }
+}
+state: LIVE
+create_time_since_epoch: 1683145703069
+last_update_time_since_epoch: 1683145703069
+, artifact_type: id: 15
+name: "Examples"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+properties {
+  key: "version"
+  value: INT
+}
+base_type: DATASET
+)]},)
+INFO:absl:MetadataStore with DB connection initialized
+INFO:absl:Going to run a new execution 4
+INFO:absl:Going to run a new execution: ExecutionInfo(execution_id=4, input_dict={'examples': [Artifact(artifact: id: 2
+type_id: 15
+uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_example_gen/examples/2"
+properties {
+  key: "split_names"
+  value {
+    string_value: "[\"train\", \"eval\"]"
+  }
+}
+custom_properties {
+  key: "file_format"
+  value {
+    string_value: "tfrecords_gzip"
+  }
+}
+custom_properties {
+  key: "input_fingerprint"
+  value {
+    string_value: "split:single_split,num_files:0,total_bytes:0,xor_checksum:0,sum_checksum:0"
+  }
+}
+custom_properties {
+  key: "is_external"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "payload_format"
+  value {
+    string_value: "FORMAT_TF_EXAMPLE"
+  }
+}
+custom_properties {
+  key: "span"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "state"
+  value {
+    string_value: "published"
+  }
+}
+custom_properties {
+  key: "tfx_version"
+  value {
+    string_value: "1.11.0"
+  }
+}
+state: LIVE
+create_time_since_epoch: 1683145703069
+last_update_time_since_epoch: 1683145703069
+, artifact_type: id: 15
+name: "Examples"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+properties {
+  key: "version"
+  value: INT
+}
+base_type: DATASET
+)]}, output_dict=defaultdict(<class 'list'>, {'statistics': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_stats_gen/statistics/4"
+, artifact_type: name: "ExampleStatistics"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+base_type: STATISTICS
+)]}), exec_properties={'exclude_splits': '[]'}, execution_output_uri='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_stats_gen/.system/executor_execution/4/executor_output.pb', stateful_working_dir='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_stats_gen/.system/stateful_working_dir/2023-05-03T20:26:44.747092', tmp_dir='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_stats_gen/.system/executor_execution/4/.temp/', pipeline_node=node_info {
+  type {
+    name: "tfx.components.statistics_gen.component.StatisticsGen"
+    base_type: PROCESS
+  }
+  id: "ratings_stats_gen"
+}
+contexts {
+  contexts {
+    type {
+      name: "pipeline"
+    }
+    name {
+      field_value {
+        string_value: "recommender"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "pipeline_run"
+    }
+    name {
+      field_value {
+        string_value: "2023-05-03T20:26:44.747092"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "node"
+    }
+    name {
+      field_value {
+        string_value: "recommender.ratings_stats_gen"
+      }
+    }
+  }
+}
+inputs {
+  inputs {
+    key: "examples"
+    value {
+      channels {
+        producer_node_query {
+          id: "ratings_example_gen"
+        }
+        context_queries {
+          type {
+            name: "pipeline"
+          }
+          name {
+            field_value {
+              string_value: "recommender"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "pipeline_run"
+          }
+          name {
+            field_value {
+              string_value: "2023-05-03T20:26:44.747092"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "node"
+          }
+          name {
+            field_value {
+              string_value: "recommender.ratings_example_gen"
+            }
+          }
+        }
+        artifact_query {
+          type {
+            name: "Examples"
+            base_type: DATASET
+          }
+        }
+        output_key: "examples"
+      }
+      min_count: 1
+    }
+  }
+}
+outputs {
+  outputs {
+    key: "statistics"
+    value {
+      artifact_spec {
+        type {
+          name: "ExampleStatistics"
+          properties {
+            key: "span"
+            value: INT
+          }
+          properties {
+            key: "split_names"
+            value: STRING
+          }
+          base_type: STATISTICS
+        }
+      }
+    }
+  }
+}
+parameters {
+  parameters {
+    key: "exclude_splits"
+    value {
+      field_value {
+        string_value: "[]"
+      }
+    }
+  }
+}
+upstream_nodes: "ratings_example_gen"
+downstream_nodes: "ratings_schema_gen"
+execution_options {
+  caching_options {
+  }
+}
+, pipeline_info=id: "recommender"
+, pipeline_run_id='2023-05-03T20:26:44.747092')
+INFO:root:Missing pipeline option (runner). Executing pipeline using the default runner: DirectRunner.
+INFO:absl:Generating statistics for split train.
+INFO:apache_beam.typehints.native_type_compatibility:Using Any for unsupported type: typing.Mapping[tensorflow_data_validation.utils.path.FeaturePath, ForwardRef('schema_pb2.FeatureType')]
+INFO:apache_beam.typehints.native_type_compatibility:Using Any for unsupported type: typing.Mapping[tensorflow_data_validation.utils.path.FeaturePath, ForwardRef('schema_pb2.FeatureType')]
+INFO:apache_beam.typehints.native_type_compatibility:Using Any for unsupported type: typing.Mapping[tensorflow_data_validation.utils.path.FeaturePath, ForwardRef('schema_pb2.FeatureType')]
+INFO:absl:Statistics for split train written to /home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_stats_gen/statistics/4/Split-train.
+INFO:absl:Generating statistics for split eval.
+INFO:apache_beam.typehints.native_type_compatibility:Using Any for unsupported type: typing.Mapping[tensorflow_data_validation.utils.path.FeaturePath, ForwardRef('schema_pb2.FeatureType')]
+INFO:apache_beam.typehints.native_type_compatibility:Using Any for unsupported type: typing.Mapping[tensorflow_data_validation.utils.path.FeaturePath, ForwardRef('schema_pb2.FeatureType')]
+INFO:apache_beam.typehints.native_type_compatibility:Using Any for unsupported type: typing.Mapping[tensorflow_data_validation.utils.path.FeaturePath, ForwardRef('schema_pb2.FeatureType')]
+INFO:absl:Statistics for split eval written to /home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_stats_gen/statistics/4/Split-eval.
+INFO:root:Default Python SDK image for environment is apache/beam_python3.9_sdk:2.44.0
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function annotate_downstream_side_inputs at 0x7f68186c4ee0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function fix_side_input_pcoll_coders at 0x7f68186c5040> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function pack_combiners at 0x7f68186c5550> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function lift_combiners at 0x7f68186c55e0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function expand_sdf at 0x7f68186c5790> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function expand_gbk at 0x7f68186c5820> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function sink_flattens at 0x7f68186c5940> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function greedily_fuse at 0x7f68186c59d0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function read_to_impulse at 0x7f68186c5a60> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function impulse_to_input at 0x7f68186c5af0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function sort_stages at 0x7f68186c5d30> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function add_impulse_to_dangling_transforms at 0x7f68186c5e50> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function setup_timer_mapping at 0x7f68186c5ca0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function populate_data_channel_coders at 0x7f68186c5dc0> ====================
+INFO:apache_beam.runners.worker.statecache:Creating state cache with size 104857600
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:Created Worker handler <apache_beam.runners.portability.fn_api_runner.worker_handlers.EmbeddedWorkerHandler object at 0x7f6814330bb0> for environment ref_Environment_default_environment_1 (beam:env:embedded_python:v1, b'')
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:absl:Cleaning up stateless execution info.
+INFO:absl:Execution 4 succeeded.
+INFO:absl:Cleaning up stateful execution info.
+INFO:absl:Publishing output artifacts defaultdict(<class 'list'>, {'statistics': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_stats_gen/statistics/4"
+, artifact_type: name: "ExampleStatistics"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+base_type: STATISTICS
+)]}) for execution 4
+INFO:absl:MetadataStore with DB connection initialized
+INFO:absl:Component ratings_stats_gen is finished.
+INFO:absl:Component movies_schema_gen is running.
+INFO:absl:Running launcher for node_info {
+  type {
+    name: "tfx.components.schema_gen.component.SchemaGen"
+    base_type: PROCESS
+  }
+  id: "movies_schema_gen"
+}
+contexts {
+  contexts {
+    type {
+      name: "pipeline"
+    }
+    name {
+      field_value {
+        string_value: "recommender"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "pipeline_run"
+    }
+    name {
+      field_value {
+        string_value: "2023-05-03T20:26:44.747092"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "node"
+    }
+    name {
+      field_value {
+        string_value: "recommender.movies_schema_gen"
+      }
+    }
+  }
+}
+inputs {
+  inputs {
+    key: "statistics"
+    value {
+      channels {
+        producer_node_query {
+          id: "movies_stats_gen"
+        }
+        context_queries {
+          type {
+            name: "pipeline"
+          }
+          name {
+            field_value {
+              string_value: "recommender"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "pipeline_run"
+          }
+          name {
+            field_value {
+              string_value: "2023-05-03T20:26:44.747092"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "node"
+          }
+          name {
+            field_value {
+              string_value: "recommender.movies_stats_gen"
+            }
+          }
+        }
+        artifact_query {
+          type {
+            name: "ExampleStatistics"
+            base_type: STATISTICS
+          }
+        }
+        output_key: "statistics"
+      }
+      min_count: 1
+    }
+  }
+}
+outputs {
+  outputs {
+    key: "schema"
+    value {
+      artifact_spec {
+        type {
+          name: "Schema"
+        }
+      }
+    }
+  }
+}
+parameters {
+  parameters {
+    key: "exclude_splits"
+    value {
+      field_value {
+        string_value: "[]"
+      }
+    }
+  }
+  parameters {
+    key: "infer_feature_shape"
+    value {
+      field_value {
+        int_value: 0
+      }
+    }
+  }
+}
+upstream_nodes: "movies_stats_gen"
+downstream_nodes: "movies_transform"
+execution_options {
+  caching_options {
+  }
+}
+
+INFO:absl:MetadataStore with DB connection initialized
+WARNING:absl:ArtifactQuery.property_predicate is not supported.
+INFO:absl:[movies_schema_gen] Resolved inputs: ({'statistics': [Artifact(artifact: id: 3
+type_id: 17
+uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_stats_gen/statistics/3"
+properties {
+  key: "split_names"
+  value {
+    string_value: "[\"train\", \"eval\"]"
+  }
+}
+custom_properties {
+  key: "is_external"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "state"
+  value {
+    string_value: "published"
+  }
+}
+custom_properties {
+  key: "tfx_version"
+  value {
+    string_value: "1.11.0"
+  }
+}
+state: LIVE
+create_time_since_epoch: 1683145707111
+last_update_time_since_epoch: 1683145707111
+, artifact_type: id: 17
+name: "ExampleStatistics"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+base_type: STATISTICS
+)]},)
+INFO:absl:MetadataStore with DB connection initialized
+INFO:absl:Going to run a new execution 5
+INFO:absl:Going to run a new execution: ExecutionInfo(execution_id=5, input_dict={'statistics': [Artifact(artifact: id: 3
+type_id: 17
+uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_stats_gen/statistics/3"
+properties {
+  key: "split_names"
+  value {
+    string_value: "[\"train\", \"eval\"]"
+  }
+}
+custom_properties {
+  key: "is_external"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "state"
+  value {
+    string_value: "published"
+  }
+}
+custom_properties {
+  key: "tfx_version"
+  value {
+    string_value: "1.11.0"
+  }
+}
+state: LIVE
+create_time_since_epoch: 1683145707111
+last_update_time_since_epoch: 1683145707111
+, artifact_type: id: 17
+name: "ExampleStatistics"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+base_type: STATISTICS
+)]}, output_dict=defaultdict(<class 'list'>, {'schema': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_schema_gen/schema/5"
+, artifact_type: name: "Schema"
+)]}), exec_properties={'infer_feature_shape': 0, 'exclude_splits': '[]'}, execution_output_uri='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_schema_gen/.system/executor_execution/5/executor_output.pb', stateful_working_dir='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_schema_gen/.system/stateful_working_dir/2023-05-03T20:26:44.747092', tmp_dir='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_schema_gen/.system/executor_execution/5/.temp/', pipeline_node=node_info {
+  type {
+    name: "tfx.components.schema_gen.component.SchemaGen"
+    base_type: PROCESS
+  }
+  id: "movies_schema_gen"
+}
+contexts {
+  contexts {
+    type {
+      name: "pipeline"
+    }
+    name {
+      field_value {
+        string_value: "recommender"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "pipeline_run"
+    }
+    name {
+      field_value {
+        string_value: "2023-05-03T20:26:44.747092"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "node"
+    }
+    name {
+      field_value {
+        string_value: "recommender.movies_schema_gen"
+      }
+    }
+  }
+}
+inputs {
+  inputs {
+    key: "statistics"
+    value {
+      channels {
+        producer_node_query {
+          id: "movies_stats_gen"
+        }
+        context_queries {
+          type {
+            name: "pipeline"
+          }
+          name {
+            field_value {
+              string_value: "recommender"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "pipeline_run"
+          }
+          name {
+            field_value {
+              string_value: "2023-05-03T20:26:44.747092"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "node"
+          }
+          name {
+            field_value {
+              string_value: "recommender.movies_stats_gen"
+            }
+          }
+        }
+        artifact_query {
+          type {
+            name: "ExampleStatistics"
+            base_type: STATISTICS
+          }
+        }
+        output_key: "statistics"
+      }
+      min_count: 1
+    }
+  }
+}
+outputs {
+  outputs {
+    key: "schema"
+    value {
+      artifact_spec {
+        type {
+          name: "Schema"
+        }
+      }
+    }
+  }
+}
+parameters {
+  parameters {
+    key: "exclude_splits"
+    value {
+      field_value {
+        string_value: "[]"
+      }
+    }
+  }
+  parameters {
+    key: "infer_feature_shape"
+    value {
+      field_value {
+        int_value: 0
+      }
+    }
+  }
+}
+upstream_nodes: "movies_stats_gen"
+downstream_nodes: "movies_transform"
+execution_options {
+  caching_options {
+  }
+}
+, pipeline_info=id: "recommender"
+, pipeline_run_id='2023-05-03T20:26:44.747092')
+INFO:absl:Processing schema from statistics for split train.
+INFO:absl:Processing schema from statistics for split eval.
+INFO:absl:Schema written to /home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_schema_gen/schema/5/schema.pbtxt.
+INFO:absl:Cleaning up stateless execution info.
+INFO:absl:Execution 5 succeeded.
+INFO:absl:Cleaning up stateful execution info.
+INFO:absl:Publishing output artifacts defaultdict(<class 'list'>, {'schema': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_schema_gen/schema/5"
+, artifact_type: name: "Schema"
+)]}) for execution 5
+INFO:absl:MetadataStore with DB connection initialized
+INFO:absl:Component movies_schema_gen is finished.
+INFO:absl:Component ratings_schema_gen is running.
+INFO:absl:Running launcher for node_info {
+  type {
+    name: "tfx.components.schema_gen.component.SchemaGen"
+    base_type: PROCESS
+  }
+  id: "ratings_schema_gen"
+}
+contexts {
+  contexts {
+    type {
+      name: "pipeline"
+    }
+    name {
+      field_value {
+        string_value: "recommender"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "pipeline_run"
+    }
+    name {
+      field_value {
+        string_value: "2023-05-03T20:26:44.747092"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "node"
+    }
+    name {
+      field_value {
+        string_value: "recommender.ratings_schema_gen"
+      }
+    }
+  }
+}
+inputs {
+  inputs {
+    key: "statistics"
+    value {
+      channels {
+        producer_node_query {
+          id: "ratings_stats_gen"
+        }
+        context_queries {
+          type {
+            name: "pipeline"
+          }
+          name {
+            field_value {
+              string_value: "recommender"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "pipeline_run"
+          }
+          name {
+            field_value {
+              string_value: "2023-05-03T20:26:44.747092"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "node"
+          }
+          name {
+            field_value {
+              string_value: "recommender.ratings_stats_gen"
+            }
+          }
+        }
+        artifact_query {
+          type {
+            name: "ExampleStatistics"
+            base_type: STATISTICS
+          }
+        }
+        output_key: "statistics"
+      }
+      min_count: 1
+    }
+  }
+}
+outputs {
+  outputs {
+    key: "schema"
+    value {
+      artifact_spec {
+        type {
+          name: "Schema"
+        }
+      }
+    }
+  }
+}
+parameters {
+  parameters {
+    key: "exclude_splits"
+    value {
+      field_value {
+        string_value: "[]"
+      }
+    }
+  }
+  parameters {
+    key: "infer_feature_shape"
+    value {
+      field_value {
+        int_value: 0
+      }
+    }
+  }
+}
+upstream_nodes: "ratings_stats_gen"
+downstream_nodes: "ratings_transform"
+execution_options {
+  caching_options {
+  }
+}
+
+INFO:absl:MetadataStore with DB connection initialized
+WARNING:absl:ArtifactQuery.property_predicate is not supported.
+INFO:absl:[ratings_schema_gen] Resolved inputs: ({'statistics': [Artifact(artifact: id: 4
+type_id: 17
+uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_stats_gen/statistics/4"
+properties {
+  key: "split_names"
+  value {
+    string_value: "[\"train\", \"eval\"]"
+  }
+}
+custom_properties {
+  key: "is_external"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "state"
+  value {
+    string_value: "published"
+  }
+}
+custom_properties {
+  key: "tfx_version"
+  value {
+    string_value: "1.11.0"
+  }
+}
+state: LIVE
+create_time_since_epoch: 1683145716956
+last_update_time_since_epoch: 1683145716956
+, artifact_type: id: 17
+name: "ExampleStatistics"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+base_type: STATISTICS
+)]},)
+INFO:absl:MetadataStore with DB connection initialized
+INFO:absl:Going to run a new execution 6
+INFO:absl:Going to run a new execution: ExecutionInfo(execution_id=6, input_dict={'statistics': [Artifact(artifact: id: 4
+type_id: 17
+uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_stats_gen/statistics/4"
+properties {
+  key: "split_names"
+  value {
+    string_value: "[\"train\", \"eval\"]"
+  }
+}
+custom_properties {
+  key: "is_external"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "state"
+  value {
+    string_value: "published"
+  }
+}
+custom_properties {
+  key: "tfx_version"
+  value {
+    string_value: "1.11.0"
+  }
+}
+state: LIVE
+create_time_since_epoch: 1683145716956
+last_update_time_since_epoch: 1683145716956
+, artifact_type: id: 17
+name: "ExampleStatistics"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+base_type: STATISTICS
+)]}, output_dict=defaultdict(<class 'list'>, {'schema': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_schema_gen/schema/6"
+, artifact_type: name: "Schema"
+)]}), exec_properties={'infer_feature_shape': 0, 'exclude_splits': '[]'}, execution_output_uri='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_schema_gen/.system/executor_execution/6/executor_output.pb', stateful_working_dir='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_schema_gen/.system/stateful_working_dir/2023-05-03T20:26:44.747092', tmp_dir='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_schema_gen/.system/executor_execution/6/.temp/', pipeline_node=node_info {
+  type {
+    name: "tfx.components.schema_gen.component.SchemaGen"
+    base_type: PROCESS
+  }
+  id: "ratings_schema_gen"
+}
+contexts {
+  contexts {
+    type {
+      name: "pipeline"
+    }
+    name {
+      field_value {
+        string_value: "recommender"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "pipeline_run"
+    }
+    name {
+      field_value {
+        string_value: "2023-05-03T20:26:44.747092"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "node"
+    }
+    name {
+      field_value {
+        string_value: "recommender.ratings_schema_gen"
+      }
+    }
+  }
+}
+inputs {
+  inputs {
+    key: "statistics"
+    value {
+      channels {
+        producer_node_query {
+          id: "ratings_stats_gen"
+        }
+        context_queries {
+          type {
+            name: "pipeline"
+          }
+          name {
+            field_value {
+              string_value: "recommender"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "pipeline_run"
+          }
+          name {
+            field_value {
+              string_value: "2023-05-03T20:26:44.747092"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "node"
+          }
+          name {
+            field_value {
+              string_value: "recommender.ratings_stats_gen"
+            }
+          }
+        }
+        artifact_query {
+          type {
+            name: "ExampleStatistics"
+            base_type: STATISTICS
+          }
+        }
+        output_key: "statistics"
+      }
+      min_count: 1
+    }
+  }
+}
+outputs {
+  outputs {
+    key: "schema"
+    value {
+      artifact_spec {
+        type {
+          name: "Schema"
+        }
+      }
+    }
+  }
+}
+parameters {
+  parameters {
+    key: "exclude_splits"
+    value {
+      field_value {
+        string_value: "[]"
+      }
+    }
+  }
+  parameters {
+    key: "infer_feature_shape"
+    value {
+      field_value {
+        int_value: 0
+      }
+    }
+  }
+}
+upstream_nodes: "ratings_stats_gen"
+downstream_nodes: "ratings_transform"
+execution_options {
+  caching_options {
+  }
+}
+, pipeline_info=id: "recommender"
+, pipeline_run_id='2023-05-03T20:26:44.747092')
+INFO:absl:Processing schema from statistics for split train.
+INFO:absl:Processing schema from statistics for split eval.
+INFO:absl:Schema written to /home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_schema_gen/schema/6/schema.pbtxt.
+INFO:absl:Cleaning up stateless execution info.
+INFO:absl:Execution 6 succeeded.
+INFO:absl:Cleaning up stateful execution info.
+INFO:absl:Publishing output artifacts defaultdict(<class 'list'>, {'schema': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_schema_gen/schema/6"
+, artifact_type: name: "Schema"
+)]}) for execution 6
+INFO:absl:MetadataStore with DB connection initialized
+INFO:absl:Component ratings_schema_gen is finished.
+INFO:absl:Component movies_transform is running.
+INFO:absl:Running launcher for node_info {
+  type {
+    name: "tfx.components.transform.component.Transform"
+    base_type: TRANSFORM
+  }
+  id: "movies_transform"
+}
+contexts {
+  contexts {
+    type {
+      name: "pipeline"
+    }
+    name {
+      field_value {
+        string_value: "recommender"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "pipeline_run"
+    }
+    name {
+      field_value {
+        string_value: "2023-05-03T20:26:44.747092"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "node"
+    }
+    name {
+      field_value {
+        string_value: "recommender.movies_transform"
+      }
+    }
+  }
+}
+inputs {
+  inputs {
+    key: "examples"
+    value {
+      channels {
+        producer_node_query {
+          id: "movies_example_gen"
+        }
+        context_queries {
+          type {
+            name: "pipeline"
+          }
+          name {
+            field_value {
+              string_value: "recommender"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "pipeline_run"
+          }
+          name {
+            field_value {
+              string_value: "2023-05-03T20:26:44.747092"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "node"
+          }
+          name {
+            field_value {
+              string_value: "recommender.movies_example_gen"
+            }
+          }
+        }
+        artifact_query {
+          type {
+            name: "Examples"
+            base_type: DATASET
+          }
+        }
+        output_key: "examples"
+      }
+      min_count: 1
+    }
+  }
+  inputs {
+    key: "schema"
+    value {
+      channels {
+        producer_node_query {
+          id: "movies_schema_gen"
+        }
+        context_queries {
+          type {
+            name: "pipeline"
+          }
+          name {
+            field_value {
+              string_value: "recommender"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "pipeline_run"
+          }
+          name {
+            field_value {
+              string_value: "2023-05-03T20:26:44.747092"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "node"
+          }
+          name {
+            field_value {
+              string_value: "recommender.movies_schema_gen"
+            }
+          }
+        }
+        artifact_query {
+          type {
+            name: "Schema"
+          }
+        }
+        output_key: "schema"
+      }
+      min_count: 1
+    }
+  }
+}
+outputs {
+  outputs {
+    key: "post_transform_anomalies"
+    value {
+      artifact_spec {
+        type {
+          name: "ExampleAnomalies"
+          properties {
+            key: "span"
+            value: INT
+          }
+          properties {
+            key: "split_names"
+            value: STRING
+          }
+        }
+      }
+    }
+  }
+  outputs {
+    key: "post_transform_schema"
+    value {
+      artifact_spec {
+        type {
+          name: "Schema"
+        }
+      }
+    }
+  }
+  outputs {
+    key: "post_transform_stats"
+    value {
+      artifact_spec {
+        type {
+          name: "ExampleStatistics"
+          properties {
+            key: "span"
+            value: INT
+          }
+          properties {
+            key: "split_names"
+            value: STRING
+          }
+          base_type: STATISTICS
+        }
+      }
+    }
+  }
+  outputs {
+    key: "pre_transform_schema"
+    value {
+      artifact_spec {
+        type {
+          name: "Schema"
+        }
+      }
+    }
+  }
+  outputs {
+    key: "pre_transform_stats"
+    value {
+      artifact_spec {
+        type {
+          name: "ExampleStatistics"
+          properties {
+            key: "span"
+            value: INT
+          }
+          properties {
+            key: "split_names"
+            value: STRING
+          }
+          base_type: STATISTICS
+        }
+      }
+    }
+  }
+  outputs {
+    key: "transform_graph"
+    value {
+      artifact_spec {
+        type {
+          name: "TransformGraph"
+        }
+      }
+    }
+  }
+  outputs {
+    key: "transformed_examples"
+    value {
+      artifact_spec {
+        type {
+          name: "Examples"
+          properties {
+            key: "span"
+            value: INT
+          }
+          properties {
+            key: "split_names"
+            value: STRING
+          }
+          properties {
+            key: "version"
+            value: INT
+          }
+          base_type: DATASET
+        }
+      }
+    }
+  }
+  outputs {
+    key: "updated_analyzer_cache"
+    value {
+      artifact_spec {
+        type {
+          name: "TransformCache"
+        }
+      }
+    }
+  }
+}
+parameters {
+  parameters {
+    key: "custom_config"
+    value {
+      field_value {
+        string_value: "null"
+      }
+    }
+  }
+  parameters {
+    key: "disable_statistics"
+    value {
+      field_value {
+        int_value: 0
+      }
+    }
+  }
+  parameters {
+    key: "force_tf_compat_v1"
+    value {
+      field_value {
+        int_value: 0
+      }
+    }
+  }
+  parameters {
+    key: "module_path"
+    value {
+      field_value {
+        string_value: "movies_transform_module@/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl"
+      }
+    }
+  }
+}
+upstream_nodes: "movies_example_gen"
+upstream_nodes: "movies_schema_gen"
+execution_options {
+  caching_options {
+  }
+}
+
+INFO:absl:MetadataStore with DB connection initialized
+WARNING:absl:ArtifactQuery.property_predicate is not supported.
+WARNING:absl:ArtifactQuery.property_predicate is not supported.
+INFO:absl:[movies_transform] Resolved inputs: ({'schema': [Artifact(artifact: id: 5
+type_id: 19
+uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_schema_gen/schema/5"
+custom_properties {
+  key: "is_external"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "state"
+  value {
+    string_value: "published"
+  }
+}
+custom_properties {
+  key: "tfx_version"
+  value {
+    string_value: "1.11.0"
+  }
+}
+state: LIVE
+create_time_since_epoch: 1683145717023
+last_update_time_since_epoch: 1683145717023
+, artifact_type: id: 19
+name: "Schema"
+)], 'examples': [Artifact(artifact: id: 1
+type_id: 15
+uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_example_gen/examples/1"
+properties {
+  key: "split_names"
+  value {
+    string_value: "[\"train\", \"eval\"]"
+  }
+}
+custom_properties {
+  key: "file_format"
+  value {
+    string_value: "tfrecords_gzip"
+  }
+}
+custom_properties {
+  key: "input_fingerprint"
+  value {
+    string_value: "split:single_split,num_files:0,total_bytes:0,xor_checksum:0,sum_checksum:0"
+  }
+}
+custom_properties {
+  key: "is_external"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "payload_format"
+  value {
+    string_value: "FORMAT_TF_EXAMPLE"
+  }
+}
+custom_properties {
+  key: "span"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "state"
+  value {
+    string_value: "published"
+  }
+}
+custom_properties {
+  key: "tfx_version"
+  value {
+    string_value: "1.11.0"
+  }
+}
+state: LIVE
+create_time_since_epoch: 1683145607150
+last_update_time_since_epoch: 1683145607150
+, artifact_type: id: 15
+name: "Examples"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+properties {
+  key: "version"
+  value: INT
+}
+base_type: DATASET
+)]},)
+INFO:absl:MetadataStore with DB connection initialized
+INFO:absl:Going to run a new execution 7
+INFO:absl:Going to run a new execution: ExecutionInfo(execution_id=7, input_dict={'schema': [Artifact(artifact: id: 5
+type_id: 19
+uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_schema_gen/schema/5"
+custom_properties {
+  key: "is_external"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "state"
+  value {
+    string_value: "published"
+  }
+}
+custom_properties {
+  key: "tfx_version"
+  value {
+    string_value: "1.11.0"
+  }
+}
+state: LIVE
+create_time_since_epoch: 1683145717023
+last_update_time_since_epoch: 1683145717023
+, artifact_type: id: 19
+name: "Schema"
+)], 'examples': [Artifact(artifact: id: 1
+type_id: 15
+uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_example_gen/examples/1"
+properties {
+  key: "split_names"
+  value {
+    string_value: "[\"train\", \"eval\"]"
+  }
+}
+custom_properties {
+  key: "file_format"
+  value {
+    string_value: "tfrecords_gzip"
+  }
+}
+custom_properties {
+  key: "input_fingerprint"
+  value {
+    string_value: "split:single_split,num_files:0,total_bytes:0,xor_checksum:0,sum_checksum:0"
+  }
+}
+custom_properties {
+  key: "is_external"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "payload_format"
+  value {
+    string_value: "FORMAT_TF_EXAMPLE"
+  }
+}
+custom_properties {
+  key: "span"
+  value {
+    int_value: 0
+  }
+}
+custom_properties {
+  key: "state"
+  value {
+    string_value: "published"
+  }
+}
+custom_properties {
+  key: "tfx_version"
+  value {
+    string_value: "1.11.0"
+  }
+}
+state: LIVE
+create_time_since_epoch: 1683145607150
+last_update_time_since_epoch: 1683145607150
+, artifact_type: id: 15
+name: "Examples"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+properties {
+  key: "version"
+  value: INT
+}
+base_type: DATASET
+)]}, output_dict=defaultdict(<class 'list'>, {'post_transform_anomalies': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_transform/post_transform_anomalies/7"
+, artifact_type: name: "ExampleAnomalies"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+)], 'transform_graph': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_transform/transform_graph/7"
+, artifact_type: name: "TransformGraph"
+)], 'post_transform_schema': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_transform/post_transform_schema/7"
+, artifact_type: name: "Schema"
+)], 'pre_transform_schema': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_transform/pre_transform_schema/7"
+, artifact_type: name: "Schema"
+)], 'pre_transform_stats': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_transform/pre_transform_stats/7"
+, artifact_type: name: "ExampleStatistics"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+base_type: STATISTICS
+)], 'post_transform_stats': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_transform/post_transform_stats/7"
+, artifact_type: name: "ExampleStatistics"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+base_type: STATISTICS
+)], 'updated_analyzer_cache': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_transform/updated_analyzer_cache/7"
+, artifact_type: name: "TransformCache"
+)], 'transformed_examples': [Artifact(artifact: uri: "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_transform/transformed_examples/7"
+, artifact_type: name: "Examples"
+properties {
+  key: "span"
+  value: INT
+}
+properties {
+  key: "split_names"
+  value: STRING
+}
+properties {
+  key: "version"
+  value: INT
+}
+base_type: DATASET
+)]}), exec_properties={'disable_statistics': 0, 'custom_config': 'null', 'force_tf_compat_v1': 0, 'module_path': 'movies_transform_module@/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl'}, execution_output_uri='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_transform/.system/executor_execution/7/executor_output.pb', stateful_working_dir='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_transform/.system/stateful_working_dir/2023-05-03T20:26:44.747092', tmp_dir='/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_transform/.system/executor_execution/7/.temp/', pipeline_node=node_info {
+  type {
+    name: "tfx.components.transform.component.Transform"
+    base_type: TRANSFORM
+  }
+  id: "movies_transform"
+}
+contexts {
+  contexts {
+    type {
+      name: "pipeline"
+    }
+    name {
+      field_value {
+        string_value: "recommender"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "pipeline_run"
+    }
+    name {
+      field_value {
+        string_value: "2023-05-03T20:26:44.747092"
+      }
+    }
+  }
+  contexts {
+    type {
+      name: "node"
+    }
+    name {
+      field_value {
+        string_value: "recommender.movies_transform"
+      }
+    }
+  }
+}
+inputs {
+  inputs {
+    key: "examples"
+    value {
+      channels {
+        producer_node_query {
+          id: "movies_example_gen"
+        }
+        context_queries {
+          type {
+            name: "pipeline"
+          }
+          name {
+            field_value {
+              string_value: "recommender"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "pipeline_run"
+          }
+          name {
+            field_value {
+              string_value: "2023-05-03T20:26:44.747092"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "node"
+          }
+          name {
+            field_value {
+              string_value: "recommender.movies_example_gen"
+            }
+          }
+        }
+        artifact_query {
+          type {
+            name: "Examples"
+            base_type: DATASET
+          }
+        }
+        output_key: "examples"
+      }
+      min_count: 1
+    }
+  }
+  inputs {
+    key: "schema"
+    value {
+      channels {
+        producer_node_query {
+          id: "movies_schema_gen"
+        }
+        context_queries {
+          type {
+            name: "pipeline"
+          }
+          name {
+            field_value {
+              string_value: "recommender"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "pipeline_run"
+          }
+          name {
+            field_value {
+              string_value: "2023-05-03T20:26:44.747092"
+            }
+          }
+        }
+        context_queries {
+          type {
+            name: "node"
+          }
+          name {
+            field_value {
+              string_value: "recommender.movies_schema_gen"
+            }
+          }
+        }
+        artifact_query {
+          type {
+            name: "Schema"
+          }
+        }
+        output_key: "schema"
+      }
+      min_count: 1
+    }
+  }
+}
+outputs {
+  outputs {
+    key: "post_transform_anomalies"
+    value {
+      artifact_spec {
+        type {
+          name: "ExampleAnomalies"
+          properties {
+            key: "span"
+            value: INT
+          }
+          properties {
+            key: "split_names"
+            value: STRING
+          }
+        }
+      }
+    }
+  }
+  outputs {
+    key: "post_transform_schema"
+    value {
+      artifact_spec {
+        type {
+          name: "Schema"
+        }
+      }
+    }
+  }
+  outputs {
+    key: "post_transform_stats"
+    value {
+      artifact_spec {
+        type {
+          name: "ExampleStatistics"
+          properties {
+            key: "span"
+            value: INT
+          }
+          properties {
+            key: "split_names"
+            value: STRING
+          }
+          base_type: STATISTICS
+        }
+      }
+    }
+  }
+  outputs {
+    key: "pre_transform_schema"
+    value {
+      artifact_spec {
+        type {
+          name: "Schema"
+        }
+      }
+    }
+  }
+  outputs {
+    key: "pre_transform_stats"
+    value {
+      artifact_spec {
+        type {
+          name: "ExampleStatistics"
+          properties {
+            key: "span"
+            value: INT
+          }
+          properties {
+            key: "split_names"
+            value: STRING
+          }
+          base_type: STATISTICS
+        }
+      }
+    }
+  }
+  outputs {
+    key: "transform_graph"
+    value {
+      artifact_spec {
+        type {
+          name: "TransformGraph"
+        }
+      }
+    }
+  }
+  outputs {
+    key: "transformed_examples"
+    value {
+      artifact_spec {
+        type {
+          name: "Examples"
+          properties {
+            key: "span"
+            value: INT
+          }
+          properties {
+            key: "split_names"
+            value: STRING
+          }
+          properties {
+            key: "version"
+            value: INT
+          }
+          base_type: DATASET
+        }
+      }
+    }
+  }
+  outputs {
+    key: "updated_analyzer_cache"
+    value {
+      artifact_spec {
+        type {
+          name: "TransformCache"
+        }
+      }
+    }
+  }
+}
+parameters {
+  parameters {
+    key: "custom_config"
+    value {
+      field_value {
+        string_value: "null"
+      }
+    }
+  }
+  parameters {
+    key: "disable_statistics"
+    value {
+      field_value {
+        int_value: 0
+      }
+    }
+  }
+  parameters {
+    key: "force_tf_compat_v1"
+    value {
+      field_value {
+        int_value: 0
+      }
+    }
+  }
+  parameters {
+    key: "module_path"
+    value {
+      field_value {
+        string_value: "movies_transform_module@/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl"
+      }
+    }
+  }
+}
+upstream_nodes: "movies_example_gen"
+upstream_nodes: "movies_schema_gen"
+execution_options {
+  caching_options {
+  }
+}
+, pipeline_info=id: "recommender"
+, pipeline_run_id='2023-05-03T20:26:44.747092')
+INFO:absl:Analyze the 'train' split and transform all splits when splits_config is not set.
+INFO:absl:udf_utils.get_fn {'module_file': None, 'module_path': 'movies_transform_module@/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl', 'preprocessing_fn': None} 'preprocessing_fn'
+INFO:absl:Installing '/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl' to a temporary directory.
+INFO:absl:Executing: ['/home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/bin/python', '-m', 'pip', 'install', '--target', '/tmp/tmp_e1w6u09', '/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl']
+Processing ./outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl
+Installing collected packages: tfx-user-code-movies-transform
+Successfully installed tfx-user-code-movies-transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56
+INFO:absl:Successfully installed '/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl'.
+INFO:absl:udf_utils.get_fn {'module_file': None, 'module_path': 'movies_transform_module@/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl', 'stats_options_updater_fn': None} 'stats_options_updater_fn'
+INFO:absl:Installing '/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl' to a temporary directory.
+INFO:absl:Executing: ['/home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/bin/python', '-m', 'pip', 'install', '--target', '/tmp/tmp8u8068e_', '/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl']
+Processing ./outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl
+Installing collected packages: tfx-user-code-movies-transform
+Successfully installed tfx-user-code-movies-transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56
+INFO:absl:Successfully installed '/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl'.
+INFO:absl:Installing '/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl' to a temporary directory.
+INFO:absl:Executing: ['/home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/bin/python', '-m', 'pip', 'install', '--target', '/tmp/tmp9cbibmiz', '/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl']
+Processing ./outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl
+Installing collected packages: tfx-user-code-movies-transform
+Successfully installed tfx-user-code-movies-transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56
+INFO:absl:Successfully installed '/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_movies_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl'.
+INFO:absl:Feature movie_genres has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_id has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_title has no shape. Setting to VarLenSparseTensor.
+WARNING:tensorflow:From /home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/lib/python3.9/site-packages/tensorflow_transform/tf_utils.py:325: Tensor.experimental_ref (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use ref() instead.
+WARNING:tensorflow:From /home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/lib/python3.9/site-packages/tensorflow_transform/tf_utils.py:325: Tensor.experimental_ref (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use ref() instead.
+INFO:absl:Feature movie_genres has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_id has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_title has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_genres has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_id has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_title has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_title has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_genres has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_id has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_title has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_genres has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_id has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_title has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_genres has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_id has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_title has no shape. Setting to VarLenSparseTensor.
+INFO:root:Missing pipeline option (runner). Executing pipeline using the default runner: DirectRunner.
+WARNING:root:This output type hint will be ignored and not used for type-checking purposes. Typically, output type hints for a PTransform are single (or nested) types wrapped by a PCollection, PDone, or None. Got: Tuple[Dict[<class 'str'>, Union[<class 'NoneType'>, <class 'tfx.components.transform.executor._Dataset'>]], Union[<class 'NoneType'>, Dict[<class 'str'>, Dict[<class 'str'>, <class 'apache_beam.pvalue.PCollection'>]]], <class 'int'>] instead.
+WARNING:root:This output type hint will be ignored and not used for type-checking purposes. Typically, output type hints for a PTransform are single (or nested) types wrapped by a PCollection, PDone, or None. Got: Tuple[Dict[<class 'str'>, Union[<class 'NoneType'>, <class 'tfx.components.transform.executor._Dataset'>]], Union[<class 'NoneType'>, Dict[<class 'str'>, Dict[<class 'str'>, <class 'apache_beam.pvalue.PCollection'>]]], <class 'int'>] instead.
+INFO:absl:Feature movie_title has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_genres has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_id has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_title has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_title has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_genres has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_id has no shape. Setting to VarLenSparseTensor.
+INFO:absl:Feature movie_title has no shape. Setting to VarLenSparseTensor.
+INFO:root:Default Python SDK image for environment is apache/beam_python3.9_sdk:2.44.0
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function annotate_downstream_side_inputs at 0x7f68186c4ee0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function fix_side_input_pcoll_coders at 0x7f68186c5040> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function pack_combiners at 0x7f68186c5550> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function lift_combiners at 0x7f68186c55e0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function expand_sdf at 0x7f68186c5790> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function expand_gbk at 0x7f68186c5820> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function sink_flattens at 0x7f68186c5940> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function greedily_fuse at 0x7f68186c59d0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function read_to_impulse at 0x7f68186c5a60> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function impulse_to_input at 0x7f68186c5af0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function sort_stages at 0x7f68186c5d30> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function add_impulse_to_dangling_transforms at 0x7f68186c5e50> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function setup_timer_mapping at 0x7f68186c5ca0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function populate_data_channel_coders at 0x7f68186c5dc0> ====================
+INFO:apache_beam.runners.worker.statecache:Creating state cache with size 104857600
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:Created Worker handler <apache_beam.runners.portability.fn_api_runner.worker_handlers.EmbeddedWorkerHandler object at 0x7f67f7e9ca00> for environment ref_Environment_default_environment_1 (beam:env:embedded_python:v1, b'')
+INFO:tensorflow:Assets written to: /home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_transform/transform_graph/7/.temp_path/tftransform_tmp/769a3907557e4d4386635176d01913e6/assets
+INFO:tensorflow:Assets written to: /home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/movies_transform/transform_graph/7/.temp_path/tftransform_tmp/769a3907557e4d4386635176d01913e6/assets
+INFO:tensorflow:struct2tensor is not available.
+INFO:tensorflow:struct2tensor is not available.
+INFO:tensorflow:tensorflow_decision_forests is not available.
+INFO:tensorflow:tensorflow_decision_forests is not available.
+INFO:tensorflow:tensorflow_text is not available.
+INFO:tensorflow:tensorflow_text is not available.
+INFO:tensorflow:struct2tensor is not available.
+INFO:tensorflow:struct2tensor is not available.
+INFO:tensorflow:tensorflow_decision_forests is not available.
+INFO:tensorflow:tensorflow_decision_forests is not available.
+INFO:tensorflow:tensorflow_text is not available.
+INFO:tensorflow:tensorflow_text is not available.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+WARNING:absl:ArtifactQuery.property_predicate is not supported.
+WARNING:absl:ArtifactQuery.property_predicate is not supported.
+Processing ./outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_ratings_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl
+Installing collected packages: tfx-user-code-ratings-transform
+Successfully installed tfx-user-code-ratings-transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56
+Processing ./outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_ratings_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl
+Installing collected packages: tfx-user-code-ratings-transform
+Successfully installed tfx-user-code-ratings-transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56
+Processing ./outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_ratings_transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl
+Installing collected packages: tfx-user-code-ratings-transform
+Successfully installed tfx-user-code-ratings-transform-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56
+INFO:root:Missing pipeline option (runner). Executing pipeline using the default runner: DirectRunner.
+WARNING:root:This output type hint will be ignored and not used for type-checking purposes. Typically, output type hints for a PTransform are single (or nested) types wrapped by a PCollection, PDone, or None. Got: Tuple[Dict[<class 'str'>, Union[<class 'NoneType'>, <class 'tfx.components.transform.executor._Dataset'>]], Union[<class 'NoneType'>, Dict[<class 'str'>, Dict[<class 'str'>, <class 'apache_beam.pvalue.PCollection'>]]], <class 'int'>] instead.
+WARNING:absl:Tables initialized inside a tf.function  will be re-initialized on every invocation of the function. This  re-initialization can have significant impact on performance. Consider lifting  them out of the graph context using  `tf.init_scope`.: compute_and_apply_vocabulary/apply_vocab/text_file_init/InitializeTableFromTextFileV2
+WARNING:absl:Tables initialized inside a tf.function  will be re-initialized on every invocation of the function. This  re-initialization can have significant impact on performance. Consider lifting  them out of the graph context using  `tf.init_scope`.: compute_and_apply_vocabulary_1/apply_vocab/text_file_init/InitializeTableFromTextFileV2
+WARNING:absl:Tables initialized inside a tf.function  will be re-initialized on every invocation of the function. This  re-initialization can have significant impact on performance. Consider lifting  them out of the graph context using  `tf.init_scope`.: compute_and_apply_vocabulary/apply_vocab/text_file_init/InitializeTableFromTextFileV2
+WARNING:absl:Tables initialized inside a tf.function  will be re-initialized on every invocation of the function. This  re-initialization can have significant impact on performance. Consider lifting  them out of the graph context using  `tf.init_scope`.: compute_and_apply_vocabulary_1/apply_vocab/text_file_init/InitializeTableFromTextFileV2
+WARNING:root:This output type hint will be ignored and not used for type-checking purposes. Typically, output type hints for a PTransform are single (or nested) types wrapped by a PCollection, PDone, or None. Got: Tuple[Dict[<class 'str'>, Union[<class 'NoneType'>, <class 'tfx.components.transform.executor._Dataset'>]], Union[<class 'NoneType'>, Dict[<class 'str'>, Dict[<class 'str'>, <class 'apache_beam.pvalue.PCollection'>]]], <class 'int'>] instead.
+WARNING:root:This input type hint will be ignored and not used for type-checking purposes. Typically, input type hints for a PTransform are single (or nested) types wrapped by a PCollection, or PBegin. Got: Dict[<class 'tensorflow_transform.beam.analyzer_cache.DatasetKey'>, <class 'tensorflow_transform.beam.analyzer_cache.DatasetCache'>] instead.
+WARNING:root:This output type hint will be ignored and not used for type-checking purposes. Typically, output type hints for a PTransform are single (or nested) types wrapped by a PCollection, PDone, or None. Got: List[<class 'apache_beam.pvalue.PDone'>] instead.
+WARNING:root:This input type hint will be ignored and not used for type-checking purposes. Typically, input type hints for a PTransform are single (or nested) types wrapped by a PCollection, or PBegin. Got: Dict[<class 'tensorflow_transform.beam.analyzer_cache.DatasetKey'>, <class 'tensorflow_transform.beam.analyzer_cache.DatasetCache'>] instead.
+WARNING:root:This output type hint will be ignored and not used for type-checking purposes. Typically, output type hints for a PTransform are single (or nested) types wrapped by a PCollection, PDone, or None. Got: List[<class 'apache_beam.pvalue.PDone'>] instead.
+INFO:root:Default Python SDK image for environment is apache/beam_python3.9_sdk:2.44.0
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function annotate_downstream_side_inputs at 0x7f68186c4ee0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function fix_side_input_pcoll_coders at 0x7f68186c5040> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function pack_combiners at 0x7f68186c5550> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function lift_combiners at 0x7f68186c55e0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function expand_sdf at 0x7f68186c5790> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function expand_gbk at 0x7f68186c5820> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function sink_flattens at 0x7f68186c5940> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function greedily_fuse at 0x7f68186c59d0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function read_to_impulse at 0x7f68186c5a60> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function impulse_to_input at 0x7f68186c5af0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function sort_stages at 0x7f68186c5d30> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function add_impulse_to_dangling_transforms at 0x7f68186c5e50> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function setup_timer_mapping at 0x7f68186c5ca0> ====================
+INFO:apache_beam.runners.portability.fn_api_runner.translations:==================== <function populate_data_channel_coders at 0x7f68186c5dc0> ====================
+INFO:apache_beam.runners.worker.statecache:Creating state cache with size 104857600
+INFO:apache_beam.runners.portability.fn_api_runner.worker_handlers:Created Worker handler <apache_beam.runners.portability.fn_api_runner.worker_handlers.EmbeddedWorkerHandler object at 0x7f68140ee070> for environment ref_Environment_default_environment_1 (beam:env:embedded_python:v1, b'')
+INFO:tensorflow:Assets written to: /home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_transform/transform_graph/8/.temp_path/tftransform_tmp/dfeee0b40f174e01b8d0f414fea2a7f0/assets
+INFO:tensorflow:Assets written to: /home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_transform/transform_graph/8/.temp_path/tftransform_tmp/dfeee0b40f174e01b8d0f414fea2a7f0/assets
+INFO:tensorflow:struct2tensor is not available.
+INFO:tensorflow:struct2tensor is not available.
+INFO:tensorflow:tensorflow_decision_forests is not available.
+INFO:tensorflow:tensorflow_decision_forests is not available.
+INFO:tensorflow:tensorflow_text is not available.
+INFO:tensorflow:tensorflow_text is not available.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:tensorflow:Assets written to: /home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_transform/transform_graph/8/.temp_path/tftransform_tmp/f182eed5d4524e28aa607a6348b99d24/assets
+INFO:tensorflow:Assets written to: /home/ubuntu/tfx/docs/tutorials/tfx/recommenders/outputs/tfx_pipeline_output/recommender/ratings_transform/transform_graph/8/.temp_path/tftransform_tmp/f182eed5d4524e28aa607a6348b99d24/assets
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:tensorflow:struct2tensor is not available.
+INFO:tensorflow:struct2tensor is not available.
+INFO:tensorflow:tensorflow_decision_forests is not available.
+INFO:tensorflow:tensorflow_decision_forests is not available.
+INFO:tensorflow:tensorflow_text is not available.
+INFO:tensorflow:tensorflow_text is not available.
+INFO:tensorflow:struct2tensor is not available.
+INFO:tensorflow:struct2tensor is not available.
+INFO:tensorflow:tensorflow_decision_forests is not available.
+INFO:tensorflow:tensorflow_decision_forests is not available.
+INFO:tensorflow:tensorflow_text is not available.
+INFO:tensorflow:tensorflow_text is not available.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+INFO:apache_beam.io.filebasedsink:Starting finalize_write threads with num_shards: 1 (skipped: 0), batches: 1, num_threads: 1
+INFO:apache_beam.io.filebasedsink:Renamed 1 shards in 0.00 seconds.
+WARNING:absl:ArtifactQuery.property_predicate is not supported.
+WARNING:absl:ArtifactQuery.property_predicate is not supported.
+WARNING:absl:ArtifactQuery.property_predicate is not supported.
+WARNING:absl:Examples artifact does not have payload_format custom property. Falling back to FORMAT_TF_EXAMPLE
+WARNING:absl:Examples artifact does not have payload_format custom property. Falling back to FORMAT_TF_EXAMPLE
+WARNING:absl:Examples artifact does not have payload_format custom property. Falling back to FORMAT_TF_EXAMPLE
+Processing ./outputs/tfx_pipeline_output/recommender/_wheels/tfx_user_code_trainer-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56-py3-none-any.whl
+Installing collected packages: tfx-user-code-trainer
+Successfully installed tfx-user-code-trainer-0.0+d83c8acbc7ca968894c5d73ea42707f765563d757ec12343e0f6a33e89688b56
+INFO:absl:Training model.
+INFO:absl:Custom config: {'epochs': 3, 'movie_schema': Channel(
+    type_name: Schema
+    artifacts: []
+    additional_properties: {}
+    additional_custom_properties: {}
+), 'movies': Channel(
+    type_name: Examples
+    artifacts: []
+    additional_properties: {}
+    additional_custom_properties: {}
+), 'ratings': Channel(
+    type_name: Examples
+    artifacts: []
+    additional_properties: {}
+    additional_custom_properties: {}
+), 'ratings_schema': Channel(
+    type_name: Schema
+    artifacts: []
+    additional_properties: {}
+    additional_custom_properties: {}
+)}
+INFO:absl:Feature movie_title has a shape dim {
+  size: 1
+}
+. Setting to DenseTensor.
+INFO:absl:Feature user_id has a shape dim {
+  size: 1
+}
+. Setting to DenseTensor.
+INFO:absl:Feature movie_title has a shape dim {
+  size: 1
+}
+. Setting to DenseTensor.
+INFO:absl:Feature user_id has a shape dim {
+  size: 1
+}
+. Setting to DenseTensor.
+ERROR:absl:######## ERROR IN run_fn before fit:
+list index out of range
+###############
+ERROR:absl:######## ERROR IN run_fn during fit:
+local variable 'model' referenced before assignment
+###############
+ERROR:absl:######## ERROR IN run_fn during export:
+local variable 'model' referenced before assignment
+###############
+INFO:absl:MetadataStore with DB connection initialized
+ERROR:absl:Execution 9 failed.
+INFO:absl:Cleaning up stateless execution info.
+Traceback (most recent call last):
+  File "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/local_runner.py", line 69, in <module>
+    run()
+  File "/home/ubuntu/tfx/docs/tutorials/tfx/recommenders/local_runner.py", line 46, in run
+    tfx.orchestration.LocalDagRunner().run(
+  File "/home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/lib/python3.9/site-packages/tfx/orchestration/portable/tfx_runner.py", line 124, in run
+    return self.run_with_ir(pipeline_pb, run_options=run_options_pb, **kwargs)
+  File "/home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/lib/python3.9/site-packages/tfx/orchestration/local/local_dag_runner.py", line 109, in run_with_ir
+    component_launcher.launch()
+  File "/home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/lib/python3.9/site-packages/tfx/orchestration/portable/launcher.py", line 573, in launch
+    executor_output = self._run_executor(execution_info)
+  File "/home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/lib/python3.9/site-packages/tfx/orchestration/portable/launcher.py", line 448, in _run_executor
+    executor_output = self._executor_operator.run_executor(execution_info)
+  File "/home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/lib/python3.9/site-packages/tfx/orchestration/portable/python_executor_operator.py", line 135, in run_executor
+    return run_with_executor(execution_info, executor)
+  File "/home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/lib/python3.9/site-packages/tfx/orchestration/portable/python_executor_operator.py", line 58, in run_with_executor
+    result = executor.Do(execution_info.input_dict, output_dict,
+  File "/home/ubuntu/.local/share/virtualenvs/recommenders-g_vVcWb2/lib/python3.9/site-packages/tfx/components/trainer/executor.py", line 183, in Do
+    raise RuntimeError('run_fn failed to generate model.')
+RuntimeError: run_fn failed to generate model.

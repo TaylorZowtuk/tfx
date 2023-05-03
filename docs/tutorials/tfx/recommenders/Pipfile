@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+jupyter = "*"
+pytest = "*"
+flake8 = "*"
+black = "==21.4b0"
+
+[packages]
+tfx = "==1.11.*"
+tensorflow-recommenders = "*"
+tensorflow-datasets = "*"
+
+[requires]
+python_version = "3.9"
